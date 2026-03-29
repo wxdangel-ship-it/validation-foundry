@@ -4,7 +4,7 @@
 
 - 本文档只冻结 `P4 越野地图页`、`P4-overlay 安全抽屉`、`P5 越野总结页` 的信息架构与可编码结构。
 - 本文档不讨论视觉风格，不新增页面，不推翻第一阶段已成立的 `P2 / P3 / Flow A / B / C`。
-- 样例事实继续沿用 `outputs/_work/20260328_t02_liuzhijiao_route_catalog_roadbook/1989358`，真实样例只覆盖里程、时长、难度、起终点、轨迹点；`risk / regroup / retreat` 继续明确标记为“原型锚点”。
+- 样例事实继续沿用 `outputs/_freeze/20260329_t04_liuzhijiao_route_1989358`，真实样例只覆盖里程、时长、难度、起终点、轨迹点；`risk / regroup / retreat` 继续明确标记为“原型锚点”。
 
 ## 2. 当前实现需收敛的偏差
 

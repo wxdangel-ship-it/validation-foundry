@@ -11,6 +11,8 @@ outputs/_work/*
 !outputs/_work/README.md
 outputs/_freeze/*
 !outputs/_freeze/README.md
+!outputs/_freeze/20260329_t04_liuzhijiao_route_1989358/
+!outputs/_freeze/20260329_t04_liuzhijiao_route_1989358/**
 outputs/_tmp/*
 !outputs/_tmp/README.md
 

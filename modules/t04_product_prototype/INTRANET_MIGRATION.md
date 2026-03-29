@@ -9,7 +9,7 @@
 - 仓库：`validation-foundry`
 - 模块：`modules/t04_product_prototype`
 - 前端：`src/validation_foundry/modules/t04_product_prototype/webapp`
-- 样例事实源：`outputs/_work/20260328_t02_liuzhijiao_route_catalog_roadbook/1989358`
+- 样例事实源：`outputs/_freeze/20260329_t04_liuzhijiao_route_1989358`
 
 ## 2. 内网 GitHub 建仓与首次推送脚本
 
@@ -72,7 +72,7 @@ gh repo create product/validation-foundry --private --source . --remote origin-i
 
 ### 4.2 事实源与运行依赖
 
-- `outputs/_work/20260328_t02_liuzhijiao_route_catalog_roadbook/1989358`
+- `outputs/_freeze/20260329_t04_liuzhijiao_route_1989358`
 - Node.js 20.x
 - npm 10.x 或兼容版本
 - Python 3.11+ 用于仓库测试
@@ -87,7 +87,7 @@ gh repo create product/validation-foundry --private --source . --remote origin-i
 
 ### 4.4 内网落地后的首次校验
 
-1. 核对样例事实源目录存在，且 `1989358` 下数据完整。
+1. 核对冻结样例事实源目录存在，且 5 个基线文件完整。
 2. 进入 `webapp` 安装依赖。
 3. 运行 `npm run test`。
 4. 运行 `npm run build` 与 `npm run build-storybook`。
@@ -132,3 +132,4 @@ npm --prefix src/validation_foundry/modules/t04_product_prototype/webapp run tes
 - 当前 2D 地图依赖在线卫星瓦片；若内网不能访问外网，需要替换为内网可达的瓦片源。
 - 当前 `P4 / P4-overlay / P5` 仍是高可信原型，不是最终业务能力。
 - `vite build` 与 `build-storybook` 仍有 chunk warning，但不阻塞原型移植与演示。
+- 当前不再需要单独外带 `1989358` 样例事实源压缩包；Git 仓库已包含冻结副本。

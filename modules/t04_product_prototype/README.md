@@ -6,7 +6,7 @@
 
 - T04 负责把 Route / Trip 原型骨架落为可点击、可自动演示的产品原型
 - 当前重点是页面契约、状态流转、三条标准流程与占位页闭环
-- 当前样例事实源固定为 `outputs/_work/20260328_t02_liuzhijiao_route_catalog_roadbook/1989358/`
+- 当前样例事实源固定为 `outputs/_freeze/20260329_t04_liuzhijiao_route_1989358/`
 - 当前不做 Route 生产、真实下载、真实轨迹解析、真实导航
 
 ## 2. 当前阶段

@@ -3,7 +3,7 @@
 ## 1. 唯一样例事实源
 
 - 第二阶段唯一事实源继续冻结为：
-  - `outputs/_work/20260328_t02_liuzhijiao_route_catalog_roadbook/1989358/`
+  - `outputs/_freeze/20260329_t04_liuzhijiao_route_1989358/`
 - 前端消费副本继续冻结为：
   - `src/validation_foundry/modules/t04_product_prototype/webapp/public/demo-data.json`
 
@@ -39,7 +39,7 @@
 ## 4. Provenance 规则
 
 - `factual`
-  - 来自 `1989358` 源目录
+  - 来自 `outputs/_freeze/20260329_t04_liuzhijiao_route_1989358/`
 - `prototype_anchor`
   - 基于真实轨迹位置派生的原型锚点
 - `derived`
@@ -72,7 +72,7 @@
 ## 6. 保持事实源一致的约束
 
 - `loadDemoBundle()` 只从 `demo-data.json` 读取
-- `demo-data.json` 只允许由 `1989358` 目录生成
+- `demo-data.json` 只允许由 `outputs/_freeze/20260329_t04_liuzhijiao_route_1989358/` 生成
 - `story-fixtures` 与 `App` 只消费同一 bundle
 - 若未来替换事实源，必须同步改：
   - `T04_R2_PRECHECK.md`

@@ -14,7 +14,7 @@
 
 - 仓库：`/mnt/e/Work/validation-foundry`
 - Webapp：`/mnt/e/Work/validation-foundry/src/validation_foundry/modules/t04_product_prototype/webapp`
-- 样例事实源：`outputs/_work/20260328_t02_liuzhijiao_route_catalog_roadbook/1989358`
+- 样例事实源：`outputs/_freeze/20260329_t04_liuzhijiao_route_1989358`
 
 执行命令：
 

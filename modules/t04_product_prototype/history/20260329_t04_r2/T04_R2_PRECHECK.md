@@ -11,7 +11,7 @@
 
 ## 2. 样例事实源确认
 
-- 第二阶段继续沿用 `outputs/_work/20260328_t02_liuzhijiao_route_catalog_roadbook/1989358/`
+- 第二阶段继续沿用 `outputs/_freeze/20260329_t04_liuzhijiao_route_1989358/`
 - 前端继续直接使用真实：
   - 里程
   - 时长
@@ -51,4 +51,3 @@
 - `modules/t04_product_prototype/history/20260329_t04_r2/`
 - `outputs/_work/t04_prototype/`
 - `outputs/_work/t04_qa/T04_R2_QA_BUNDLE/`
-

@@ -3,7 +3,7 @@
 ## 1. 样例数据集合
 
 - `platformRouteSample`
-  - 使用 `outputs/_work/20260328_t02_liuzhijiao_route_catalog_roadbook/1989358/`
+  - 使用 `outputs/_freeze/20260329_t04_liuzhijiao_route_1989358/`
   - `1989358_metadata.json`、`1989358_geometry_summary.json`、`1989358_geometry.geojson`、`1989358_description.md` 为事实源
   - 文案语义为平台整理路线
 - `importedTrackSample`

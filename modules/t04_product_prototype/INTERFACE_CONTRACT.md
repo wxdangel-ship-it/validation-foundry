@@ -32,7 +32,7 @@
 ### 2.1 必选输入
 
 - 用户冻结的 T04 页面与流程需求
-- `outputs/_work/20260328_t02_liuzhijiao_route_catalog_roadbook/1989358/` 作为平台 Route / 导入轨迹共用样例事实源
+- `outputs/_freeze/20260329_t04_liuzhijiao_route_1989358/` 作为平台 Route / 导入轨迹共用样例事实源
 - 自由探索固定 mock 区域、起点、锚点、范围
 
 ### 2.2 可选输入

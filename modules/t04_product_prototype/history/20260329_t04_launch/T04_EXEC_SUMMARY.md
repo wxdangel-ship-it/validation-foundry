@@ -4,7 +4,7 @@
 
 - 以独立模块 `t04_product_prototype` 正式启动 T04，并按 `Support Retained` 形态接入治理
 - 补齐 T04 标准模块文档面、首轮冻结包、原型 webapp、QA 证据包与执行总结
-- 基于 `outputs/_work/20260328_t02_liuzhijiao_route_catalog_roadbook/1989358/` 的六只脚样例 `liuzhijiao_1989358` 实现平台 Route 与导入轨迹双模式样例
+- 基于 `outputs/_freeze/20260329_t04_liuzhijiao_route_1989358/` 的六只脚样例 `liuzhijiao_1989358` 实现平台 Route 与导入轨迹双模式样例
 - 实现自由探索计划页、越野地图页占位版、安全抽屉占位版、路线总结页占位版
 - 跑通 Flow A / Flow B / Flow C，并保留截图与 Playwright 日志
 - 回写新一轮 UI / 平板画布 / Storybook 自动演示 / P0 gate 冻结口径到契约、线框和 QA 文档

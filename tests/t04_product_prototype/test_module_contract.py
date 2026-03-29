@@ -54,3 +54,16 @@ def test_t04_webapp_sample_and_entry_exist() -> None:
     assert (webapp_root / "src" / "state" / "prototype-machine.ts").exists()
     assert (webapp_root / "src" / "mocks" / "sample-data.ts").exists()
     assert (webapp_root / "public" / "demo-data.json").exists()
+
+
+def test_t04_frozen_sample_fact_source_exists() -> None:
+    freeze_root = REPO_ROOT / "outputs" / "_freeze" / "20260329_t04_liuzhijiao_route_1989358"
+    for relative_path in (
+        "README.md",
+        "1989358_description.md",
+        "1989358_geometry.geojson",
+        "1989358_geometry.gpx",
+        "1989358_geometry_summary.json",
+        "1989358_metadata.json",
+    ):
+        assert (freeze_root / relative_path).exists(), relative_path
