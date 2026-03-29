@@ -53,6 +53,10 @@
   - 流程截图
   - 自动演示日志
   - 构建产物索引
+- `outputs/_freeze/20260329_t04_static_preview/`
+  - `artifacts/dist/`
+  - `artifacts/storybook-static/`
+  - 供内网直接下拉后启动的冻结静态成果
 - `outputs/_work/t04_qa/`
   - `T04_QA_BUNDLE/`
   - `tree.txt`

@@ -10,6 +10,7 @@
 - 模块：`modules/t04_product_prototype`
 - 前端：`src/validation_foundry/modules/t04_product_prototype/webapp`
 - 样例事实源：`outputs/_freeze/20260329_t04_liuzhijiao_route_1989358`
+- 静态预览冻结：`outputs/_freeze/20260329_t04_static_preview`
 
 ## 2. 内网 GitHub 建仓与首次推送脚本
 
@@ -68,6 +69,8 @@ gh repo create product/validation-foundry --private --source . --remote origin-i
 - `modules/t04_product_prototype/`
 - `src/validation_foundry/modules/t04_product_prototype/`
 - `tests/t04_product_prototype/`
+- `outputs/_freeze/20260329_t04_liuzhijiao_route_1989358/`
+- `outputs/_freeze/20260329_t04_static_preview/`
 - 仓库根的 `.gitignore`
 
 ### 4.2 事实源与运行依赖
@@ -85,42 +88,69 @@ gh repo create product/validation-foundry --private --source . --remote origin-i
 - `outputs/_work/`
 - `outputs/_tmp/`
 
-### 4.4 内网落地后的首次校验
+### 4.4 直接预览方案
+
+若目标只是“通过 GitHub 下拉后立即查看成果”，不需要先安装前端依赖，直接启动冻结静态产物即可：
+
+```bash
+cd outputs/_freeze/20260329_t04_static_preview/artifacts/dist
+python3 -m http.server 4173 --bind 127.0.0.1
+```
+
+```bash
+cd outputs/_freeze/20260329_t04_static_preview/artifacts/storybook-static
+python3 -m http.server 6006 --bind 127.0.0.1
+```
+
+### 4.5 内网落地后的首次校验
 
 1. 核对冻结样例事实源目录存在，且 5 个基线文件完整。
-2. 进入 `webapp` 安装依赖。
-3. 运行 `npm run test`。
-4. 运行 `npm run build` 与 `npm run build-storybook`。
-5. 启动原型与 Storybook，人工确认 `P2 / P3 / P4 / P5` 和 `Flow A / B / C`。
+2. 若只看成果，优先验证 `outputs/_freeze/20260329_t04_static_preview/` 下的 `dist` 与 `storybook-static` 可启动。
+3. 若需继续开发，再进入 `webapp` 安装依赖。
+4. 运行 `npm run test`。
+5. 运行 `npm run build` 与 `npm run build-storybook`。
+6. 启动原型与 Storybook，人工确认 `P2 / P3 / P4 / P5` 和 `Flow A / B / Flow C`。
 
 ## 5. 启动命令
 
-### 5.1 安装依赖
+### 5.1 直接启动冻结成果
+
+```bash
+cd outputs/_freeze/20260329_t04_static_preview/artifacts/dist
+python3 -m http.server 4173 --bind 127.0.0.1
+```
+
+```bash
+cd outputs/_freeze/20260329_t04_static_preview/artifacts/storybook-static
+python3 -m http.server 6006 --bind 127.0.0.1
+```
+
+### 5.2 安装依赖
 
 ```bash
 npm --prefix src/validation_foundry/modules/t04_product_prototype/webapp install
 ```
 
-### 5.2 启动原型本体
+### 5.3 启动原型本体
 
 ```bash
 npm --prefix src/validation_foundry/modules/t04_product_prototype/webapp run dev -- --host 0.0.0.0 --port 4173
 ```
 
-### 5.3 启动 Storybook
+### 5.4 启动 Storybook
 
 ```bash
 npm --prefix src/validation_foundry/modules/t04_product_prototype/webapp run storybook -- --host 0.0.0.0 --port 6006
 ```
 
-### 5.4 构建原型与 Storybook
+### 5.5 构建原型与 Storybook
 
 ```bash
 npm --prefix src/validation_foundry/modules/t04_product_prototype/webapp run build
 npm --prefix src/validation_foundry/modules/t04_product_prototype/webapp run build-storybook
 ```
 
-### 5.5 运行测试
+### 5.6 运行测试
 
 ```bash
 PYTHONPATH=src python3 -m pytest tests/t04_product_prototype -q -s
@@ -133,3 +163,4 @@ npm --prefix src/validation_foundry/modules/t04_product_prototype/webapp run tes
 - 当前 `P4 / P4-overlay / P5` 仍是高可信原型，不是最终业务能力。
 - `vite build` 与 `build-storybook` 仍有 chunk warning，但不阻塞原型移植与演示。
 - 当前不再需要单独外带 `1989358` 样例事实源压缩包；Git 仓库已包含冻结副本。
+- 当前也不再需要单独外带静态预览压缩包；Git 仓库已包含冻结后的 `dist` 与 `storybook-static`。

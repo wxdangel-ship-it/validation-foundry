@@ -67,3 +67,14 @@ def test_t04_frozen_sample_fact_source_exists() -> None:
         "1989358_metadata.json",
     ):
         assert (freeze_root / relative_path).exists(), relative_path
+
+
+def test_t04_frozen_static_preview_exists() -> None:
+    freeze_root = REPO_ROOT / "outputs" / "_freeze" / "20260329_t04_static_preview"
+    for relative_path in (
+        "README.md",
+        "artifacts/dist/index.html",
+        "artifacts/storybook-static/index.html",
+        "artifacts/storybook-static/iframe.html",
+    ):
+        assert (freeze_root / relative_path).exists(), relative_path
