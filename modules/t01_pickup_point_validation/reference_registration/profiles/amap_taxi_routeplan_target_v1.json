@@ -1,0 +1,10 @@
+{
+  "profile_id": "amap_taxi_routeplan_target_v1",
+  "description": "AMap routeplan -> taxi target gate page on portrait device; tuned for right-side green pickup marker pages.",
+  "map_roi_xyxy": [0, 360, 1080, 1260],
+  "exclude_rois_xyxy": [
+    [0, 1080, 120, 1240],
+    [930, 420, 1080, 1240],
+    [0, 1185, 1080, 1260]
+  ]
+}

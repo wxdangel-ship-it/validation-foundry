@@ -1,0 +1,43 @@
+{
+  "profile_id": "amap_taxi_local_route_v1",
+  "provider": "amap",
+  "page_state": "taxi_local_route_pickup",
+  "screen_size_px": [
+    1080,
+    2340
+  ],
+  "map_roi_xyxy": [
+    0,
+    360,
+    1080,
+    1350
+  ],
+  "exclude_rois_xyxy": [
+    [200, 500, 650, 695],
+    [260, 880, 820, 1060],
+    [930, 480, 1080, 1030],
+    [0, 880, 110, 1100],
+    [0, 1120, 1080, 1350]
+  ],
+  "tip_rules": {
+    "green_start_pickup": {
+      "color_space": "HSV",
+      "mask_range": [
+        35,
+        80,
+        80,
+        95,
+        255,
+        255
+      ],
+      "notes": "用于本地短程打车页绿色起点标记取点。"
+    }
+  },
+  "reference_contract": {
+    "orientation": "portrait",
+    "north_up": true,
+    "pitch": 0,
+    "same_effective_viewport": true,
+    "same_or_equivalent_basemap_semantics": true
+  }
+}

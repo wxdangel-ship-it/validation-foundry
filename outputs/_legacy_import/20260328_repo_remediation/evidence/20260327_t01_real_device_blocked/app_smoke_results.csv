@@ -1,0 +1,4 @@
+probe_id,app,input_ref,status,reason,evidence
+mockgps_real_device,mockgps,"31.237244978601012,121.50094997137784",SUCCESS,"Map tap then Start mocking publishes mock GPS on the Huawei real device.","mockgps_running.png;mockgps_after_maptap.xml;mockgps_after_start.xml;mock_and_receivers.txt"
+didi_home_locate,didi,"31.237244978601012,121.50094997137784",BLOCKED,"Didi requests gps plus network, but after clicking 定位 and waiting for stability it still shows 北京/茉藜园-东北门 instead of the mocked Shanghai point.","didi_after_locate.png;didi_ui_excerpt.txt;didi_location_receivers.txt"
+amap_taxi_entry,amap,"31.237244978601012,121.50094997137784",BLOCKED,"AMap home receives mock GPS, but every tested taxi-service entry path hits a login wall under the no-login contract.","amap_mock_log.txt;amap_login_wall.png;amap_login_excerpt.txt"

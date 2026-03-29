@@ -1,0 +1,3 @@
+app,status,failure_type,reason,evidence_dir
+didi,BLOCKED,app_ignores_mock_location,"首页存在重新定位控件，但在gps only + mock上海点下仍显示北京市并要求手输上车点","outputs/_work/20260327_t01_logged_in_gps_only_blocked"
+amap,BLOCKED,service_entry_drift_or_redirect,"显式启动和打车入口可执行，但一条路径停在北京上车点，另一条路径漂移到企业版页面","outputs/_work/20260327_t01_logged_in_gps_only_blocked"

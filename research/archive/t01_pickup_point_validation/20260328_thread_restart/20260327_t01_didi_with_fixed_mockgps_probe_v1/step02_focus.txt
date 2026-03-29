@@ -1,0 +1,13 @@
+371:  Window #10 Window{624d0b1 u0 com.sdu.didi.psnger/com.didi.sdk.app.MainActivity}:
+373:    mOwnerUid=10251 mShowToOwnerOnly=true package=com.sdu.didi.psnger appop=NONE
+378:    mBaseLayer=21000 mSubLayer=0    mToken=AppWindowToken{6326287 token=Token{65afa22 ActivityRecord{6326248 u0 com.sdu.didi.psnger/com.didi.sdk.app.MainActivity t312}}}
+379:    mAppToken=AppWindowToken{6326287 token=Token{65afa22 ActivityRecord{6326248 u0 com.sdu.didi.psnger/com.didi.sdk.app.MainActivity t312}}}
+396:    WindowStateAnimator{5cfac57 com.sdu.didi.psnger/com.didi.sdk.app.MainActivity}:
+397:      mSurface=Surface(name=com.sdu.didi.psnger/com.didi.sdk.app.MainActivity)/@0x5aee83f
+410:  Window #11 Window{629a2b1 u0 com.lilstiffy.mockgps/com.lilstiffy.mockgps.MainActivity}:
+412:    mOwnerUid=10261 mShowToOwnerOnly=true package=com.lilstiffy.mockgps appop=NONE
+417:    mBaseLayer=21000 mSubLayer=0    mToken=AppWindowToken{61b01c2 token=Token{58f72b8 ActivityRecord{61b0183 u0 com.lilstiffy.mockgps/.MainActivity t307}}}
+418:    mAppToken=AppWindowToken{61b01c2 token=Token{58f72b8 ActivityRecord{61b0183 u0 com.lilstiffy.mockgps/.MainActivity t307}}}
+435:    WindowStateAnimator{5cfad27 com.lilstiffy.mockgps/com.lilstiffy.mockgps.MainActivity}:
+799:      topApp=AppWindowToken{61b01c2 token=Token{58f72b8 ActivityRecord{61b0183 u0 com.lilstiffy.mockgps/.MainActivity t307}}}
+800:      snapshot=TaskSnapshot{ mTopActivityComponent=com.lilstiffy.mockgps/.MainActivity mSnapshot=android.graphics.GraphicBuffer@62666bf (756x1638) mColorSpace=sRGB IEC61966-2.1 (id=0, model=RGB) mOrientation=1 mContentInsets=[0,102][0,0] mReducedResolution=true mScale=0.7 mIsRealSnapshot=true mWindowingMode=1 mSystemUiVisibility=9984 mIsTranslucent=false

@@ -1,0 +1,8 @@
+Starting: Intent { cmp=com.lilstiffy.mockgps/.MainActivity (has extras) }
+Warning: Activity not started, its current task has been brought to the front
+Status: ok
+LaunchState: HOT
+Activity: com.lilstiffy.mockgps/.MainActivity
+TotalTime: 161
+WaitTime: 187
+Complete

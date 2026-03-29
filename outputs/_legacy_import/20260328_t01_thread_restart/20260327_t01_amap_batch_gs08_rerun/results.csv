@@ -1,0 +1,2 @@
+id,name,input_x,input_y,output_x,output_y,status,app,reason,evidence_dir
+GS08,三林样例,121.500000,31.163000,121.500000,31.163000,SUCCESS,amap,amap_taxi_pickup_is_my_location,/mnt/c/Users/admin/vf_stage/outputs/20260327_t01_amap_batch_gs08_rerun/GS08

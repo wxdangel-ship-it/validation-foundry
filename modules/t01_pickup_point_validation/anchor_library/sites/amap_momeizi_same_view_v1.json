@@ -1,0 +1,69 @@
+{
+  "site_id": "amap_momeizi_same_view_v1",
+  "provider": "amap",
+  "site_name": "多美滋婴幼儿食品有限公司同视口样例",
+  "solve_method": "axis_aligned_same_view",
+  "tip_profile": "red_pin",
+  "device": {
+    "model": "LYA-AL00",
+    "screen_size_px": [
+      1080,
+      2340
+    ]
+  },
+  "viewport_contract": {
+    "screen_orientation": "portrait",
+    "map_state": "same_view_local_calibration",
+    "constraints": [
+      "same_map_view",
+      "same_zoom",
+      "same_rotation",
+      "same_device"
+    ],
+    "notes": "仅适用于同一底图、同一视口、同一缩放、同一朝向。"
+  },
+  "anchors": [
+    {
+      "anchor_id": "company",
+      "name": "多美滋婴幼儿食品有限公司(宁桥路)",
+      "lon": 121.60856,
+      "lat": 31.24907,
+      "tip_px": [
+        537.5,
+        529.0
+      ],
+      "source_type": "poi_detail_same_view",
+      "source_ref": "outputs/_legacy_import/20260328_t01_thread_restart/20260327_t01_gate_coord_estimation_v1/estimation.json#anchors.company",
+      "evidence_image": "outputs/_legacy_import/20260328_t01_thread_restart/20260327_t01_gate_coord_estimation_v1/company_annotated.png",
+      "confidence": "high"
+    },
+    {
+      "anchor_id": "parking",
+      "name": "多美滋婴幼儿食品有限公司(宁桥路)停车场",
+      "lon": 121.608375,
+      "lat": 31.249775,
+      "tip_px": [
+        516.5,
+        449.0
+      ],
+      "source_type": "poi_detail_same_view",
+      "source_ref": "outputs/_legacy_import/20260328_t01_thread_restart/20260327_t01_gate_coord_estimation_v1/estimation.json#anchors.parking",
+      "evidence_image": "outputs/_legacy_import/20260328_t01_thread_restart/20260327_t01_gate_coord_estimation_v1/parking_annotated.png",
+      "confidence": "high"
+    }
+  ],
+  "targets": [
+    {
+      "target_id": "dongnan",
+      "name": "多美滋婴幼儿食品有限公司(东南门)",
+      "image": "outputs/_legacy_import/20260328_t01_thread_restart/20260327_t01_gate_coord_estimation_v1/dongnan_annotated.png",
+      "expected_tip_xy": [
+        673.7692307692307,
+        665.0
+      ],
+      "expected_output_x": 121.60976046703298,
+      "expected_output_y": 31.2478715,
+      "confidence": "high"
+    }
+  ]
+}

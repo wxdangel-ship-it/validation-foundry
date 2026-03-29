@@ -1,0 +1,1 @@
+UI hierchary dumped to: /sdcard/step02_didi_home.xml

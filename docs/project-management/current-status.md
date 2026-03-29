@@ -1,0 +1,239 @@
+# 当前状态
+
+- 记录日期：`2026-03-29`
+- 当前正式模块：`t01_pickup_point_validation`
+- 当前阶段：`Phase 2 Single-Point Success / in-progress`
+- Gate 结论：`Phase 0 PASS / Phase 1 PASS / Phase 2 IN_PROGRESS`
+- 下一阶段：`把 routeplan_uri 目标门点链路收紧到合同级单点 SUCCESS，并加固 target taxi 页的 tip -> GCJ-02`
+- 是否允许继续：`YES`
+- 当前选定优先主线：`amap + hybrid(routeplan_uri + taxi exact gate label + reference_registration)`
+
+## 1. 当前阶段判断
+
+- `E:\Work\validation-foundry` / `/mnt/e/Work/validation-foundry` 已成为唯一活跃事实源。
+- 当前 T01 的目标已经纠偏为：
+  - 输入 `GCJ-02`
+  - 在目标应用中得到最终“上车点”的 `GCJ-02`
+  - 允许 `mock_direct / visual_tip / drag_map / hybrid` 并行竞争
+- 当前不再接受“只要高德 taxi 页显示 `我的位置 上车` 就算最终成功”的旧口径。
+
+## 2. 本轮已完成事实
+
+- `Phase 0 Repo Remediation` 已完成：
+  - 历史 handoff、legacy 证据索引、关键批量证据、视觉/几何资产已迁入仓库
+  - `MockGps` fork 已进入 `third_party/mockgps_fork/`
+  - 旧 `C:\Users\admin` 活跃路径引用已从当前文档和结果表中移除
+- 运行时 smoke 已通过：
+  - 设备在线
+  - 滴滴 / 高德 / MockGps 包都在
+  - launcher 可解析
+  - `uiautomator dump` 与 `screencap` 可用
+  - 注意事项仅剩：当前 shell 必须显式使用 `/mnt/c/Users/admin/AppData/Local/Android/Sdk/platform-tools/adb.exe`
+- 滴滴链路已重新定性为 `FAIL`，不是 `BLOCKED`：
+  - `SplashActivity` 与 `MainActivity` 都可达
+  - mock provider 仍然活跃
+  - 当前前台单点仍可收敛到 `清友园-西4门(主路)` 等非目标上下文
+  - 因此滴滴不是“环境起不来”，而是“业务态不可交付”
+- 高德链路的当前排序已经明确：
+  - 不再把当前版 `mock_direct` 当主线
+  - 主线改为 `amap + hybrid`
+  - 第二主线为 `amap + visual_tip`
+  - `drag_map` 只保留为辅助
+  - 旧版高德只保留一次低成本回退验证
+- 坐标求解侧已有可复用单点成果：
+  - `outputs/_legacy_import/20260328_t01_thread_restart/20260327_t01_gate_coord_estimation_v1/gate_results.csv`
+  - 已记录显式 tip 在同视口条件下反算 `GCJ-02` 的成功样例
+- 屏幕 tip 自动定位能力已在仓内离线验证：
+  - `taxi_my_location` 模板定位在 `10/10` 历史高德 taxi 截图上精确回到 `tip=(539,681)`
+  - `red_pin` 组件合并定位在 `2/2` 历史显式 pin 样例上达到 `<=5px` 误差
+  - 证据目录：`outputs/_work/20260328_t01_tip_locator_validation/`
+- 局部同视口坐标求解器已在仓内代码化并复现历史单点：
+  - `modules/t01_pickup_point_validation/scripts/t01_local_frame_solver.py`
+  - 已用 `company + parking` 两个锚点复现 `dongnan` 结果
+  - 证据目录：`outputs/_work/20260328_t01_frame_solver_validation/`
+- 站点级锚点库 bootstrap 已落地：
+  - `modules/t01_pickup_point_validation/anchor_library/sites/amap_momeizi_same_view_v1.json`
+  - `modules/t01_pickup_point_validation/scripts/t01_anchor_site_solver.py`
+  - 已对 `dongnan` 历史样例跑通“站点配置 + tip 定位 + 局部求解”端到端链路
+  - 证据目录：`outputs/_work/20260328_t01_anchor_site_bootstrap/`
+- 实时固定视角投屏取点已完成一次：
+  - 高德 taxi 页已在固定竖屏视角下取到 live pickup 屏幕点
+  - `pickup_tip_px=[556,637]`
+  - 证据目录：`outputs/_work/20260328_t01_live_projection_pickup/`
+- 参考底图配准原型已完成：
+  - `modules/t01_pickup_point_validation/scripts/t01_map_registration.py`
+  - 合成参考底图回归误差 `0.0506px`
+  - 证据目录：`outputs/_work/20260328_t01_map_registration_validation/`
+- 公共 `appmaptile` 真实瓦片探针已完成：
+  - 服务可用
+  - `AKAZE` 路线在 `z16/z17` 上只得到弱信号
+  - 切换到 `SIFT + z17/style7` 后，已形成 `5` 个成员的收敛簇
+  - 当前簇加权结果：
+    - `output_x=116.42497310610331`
+    - `output_y=40.040352321549335`
+  - 当前判断：
+    - `S2` 已从“弱探针”升级为“中置信度单点候选”
+    - 同口径复拍已在 `same_page` 条件下完成
+    - 但 `fresh reopen` 仍未达到合同级稳定性
+  - 证据目录：`outputs/_work/20260328_t01_map_registration_validation/`
+- `S2` live 复拍实验已完成：
+  - `same_page` 组 `3/3` 成功并收敛到单一坐标簇
+  - 最佳簇：
+    - `output_x=116.4248853377763`
+    - `output_y=40.04031897919065`
+    - `max_distance_m=2.6`
+  - `reopen` 组出现真实页面分型：
+    - 有成功样本
+    - 也有 `tip NOT_FOUND` 样本
+  - 当前判断：
+    - `S2 same_page` 已具备重复性
+    - `S2 fresh_reopen` 不是整体不稳定，而是明显 variant-dependent
+    - `school_northwest_gate` 当前最稳定
+    - `school_northwest_side` 可解但次稳定
+    - `清友园(西4门)-链家旁` 已可取 tip，但配准仍弱
+    - `generic_taxi_pickup` 当前属于 off-cluster 弱分型
+  - 证据目录：`outputs/_work/20260328_t01_s2_repeat_probe/`
+- 已新增一条 AMap 本地短程打车页 `SUCCESS` 候选：
+  - 页面链：
+    - `青岛啤酒优家健康饮品(上海)有限公司 -> 多美滋婴幼儿食品有限公司(东南门) -> 打车`
+  - 打车页已出现明确 `点击修改上车点` 文案与绿色起点标记
+  - `green_start_pickup` 自动取点结果：
+    - `pickup_tip_px=[189,779]`
+  - 公共 `appmaptile z17/style8` 正式脚本配准结果：
+    - `best.output_x=121.60684037715845`
+    - `best.output_y=31.249020713386546`
+  - 主簇 `4` 成员加权结果：
+    - `output_x=121.60684180348042`
+    - `output_y=31.249073809351668`
+    - `max_distance_to_best_m=12.43`
+  - 已生成正式单条结果记录：
+    - `outputs/_work/20260328_t01_gs05_route_registration/single_point_result.json`
+  - 当前判断：
+    - 已拿到新的可复核 `SUCCESS` 样例
+    - 但该样例起点仍是 UI 选择的近邻 POI，不是直接由 CSV 原始坐标驱动
+    - 同口径 `2x` 重复尚未完成，因此 `Phase 2` gate 仍保守维持 `IN_PROGRESS`
+- 已新增高德官方 `routeplan_uri` 目标门点突破：
+  - 官方 Android 路径规划 URI 已在当前设备上打通：
+    - `amapuri://route/plan/?...`
+  - `m.amap.com` 浏览器路线页已降级，不再作为主线
+  - taxi 页坐标扫描已确认：
+    - `slon=121.60925`
+    - `slat=31.2485`
+    - 在 taxi 起点输入栏会被高德吸附为：
+      - `多美滋婴幼儿食品有限公司(东南门)`
+  - 同一点已完成 `2x` 重复：
+    - `outputs/_work/20260328_t01_amapuri_routeplan_taxi_sweep_v3/run_09/`
+    - `outputs/_work/20260328_t01_amapuri_routeplan_taxi_repeat_target_v2/`
+  - 已落单条结果记录：
+    - `outputs/_work/20260328_t01_amapuri_routeplan_taxi_repeat_target_v2/single_point_result.json`
+  - 目标 taxi 页绿色起点已自动取到：
+    - `pickup_tip_px=[852,1159]`
+  - 但当前 `tip -> public tile registration` 仍弱，尚未回到目标门点附近
+  - 当前判断：
+    - `routeplan_uri + taxi exact gate label` 已成为最贴近合同输入的新主线
+    - `Phase 2` 已非常接近 gate，但当前仍保守维持 `IN_PROGRESS`
+
+## 3. 阶段 Gate
+
+- `Phase 0 Repo Remediation`：`PASS`
+- `Phase 1 Method Portfolio`：`PASS`
+- `Phase 2 Single-Point Success`：`IN_PROGRESS`
+
+## 4. 当前最关键证据
+
+- Repo remediation 报告：
+  - `docs/project-management/restart-remediation-report.md`
+- 子 Agent 责任与现况：
+  - `docs/project-management/child-agent-thread-plan.md`
+- 运行时 smoke：
+  - `modules/t01_pickup_point_validation/history/013-20260328-runtime-smoke-notes.md`
+  - `outputs/_work/20260328_t01_runtime_smoke/didi_current_front/`
+- 滴滴方法探针：
+  - `modules/t01_pickup_point_validation/history/014-20260328-didi-method-probe.md`
+- 高德方法探针：
+  - `modules/t01_pickup_point_validation/history/015-20260328-amap-method-probe.md`
+- 坐标求解方法：
+  - `modules/t01_pickup_point_validation/history/016-20260328-coordinate-solving-methods.md`
+- QA 结果表与方法比较：
+  - `modules/t01_pickup_point_validation/history/017-20260328-qa-results-schema-and-method-comparison.md`
+- 主线组合与单点推进结果：
+  - `modules/t01_pickup_point_validation/history/018-20260328-method-portfolio-and-mainline-selection.md`
+- 屏幕 tip 自动定位验证：
+  - `modules/t01_pickup_point_validation/history/019-20260328-screen-tip-locator-validation.md`
+  - `outputs/_work/20260328_t01_tip_locator_validation/`
+- 局部同视口求解器验证：
+  - `modules/t01_pickup_point_validation/history/020-20260328-local-frame-solver-validation.md`
+  - `outputs/_work/20260328_t01_frame_solver_validation/`
+- 站点级锚点库 bootstrap：
+  - `modules/t01_pickup_point_validation/history/021-20260328-anchor-library-bootstrap.md`
+  - `modules/t01_pickup_point_validation/anchor_library/`
+  - `outputs/_work/20260328_t01_anchor_site_bootstrap/`
+- 实时固定视角投屏取点：
+  - `modules/t01_pickup_point_validation/history/022-20260328-live-projection-pickup-acquisition.md`
+  - `outputs/_work/20260328_t01_live_projection_pickup/`
+- 参考底图配准验证：
+  - `modules/t01_pickup_point_validation/history/023-20260328-reference-registration-validation.md`
+  - `modules/t01_pickup_point_validation/reference_registration/`
+  - `outputs/_work/20260328_t01_map_registration_validation/`
+- 公共真实瓦片探针：
+  - `modules/t01_pickup_point_validation/history/024-20260328-real-tile-probe-with-public-appmaptile.md`
+- `S2` 公共底图配准突破：
+  - `modules/t01_pickup_point_validation/history/025-20260328-s2-public-tile-registration-breakthrough.md`
+  - `outputs/_work/20260328_t01_map_registration_validation/real_z17_style7_window_search_sift_v1.json`
+  - `outputs/_work/20260328_t01_map_registration_validation/real_z17_style7_window_search_sift_refine_v2.json`
+  - `outputs/_work/20260328_t01_map_registration_validation/real_z17_style7_sift_consensus.json`
+- `S2` live 重复实验：
+  - `modules/t01_pickup_point_validation/history/026-20260328-s2-live-repeat-experiments.md`
+  - `outputs/_work/20260328_t01_s2_repeat_probe/`
+- `S2` 页面分型结论：
+  - `modules/t01_pickup_point_validation/history/027-20260328-s2-page-variant-findings.md`
+  - `outputs/_work/20260328_t01_s2_repeat_probe/variant_summary.json`
+- 本地短程打车页成功候选：
+  - `modules/t01_pickup_point_validation/history/028-20260328-amap-local-route-taxi-success-candidate.md`
+  - `outputs/_work/20260328_t01_gs05_taxi_mode_from_local_route/`
+  - `outputs/_work/20260328_t01_gs05_route_mosaic_style8_v2/`
+  - `outputs/_work/20260328_t01_gs05_route_registration/`
+- routeplan URI 目标门点突破：
+  - `modules/t01_pickup_point_validation/history/029-20260328-amapuri-routeplan-target-gate-breakthrough.md`
+  - `outputs/_work/20260328_t01_amapuri_routeplan_probe/`
+  - `outputs/_work/20260328_t01_amapuri_routeplan_taxi_sweep_v2/`
+  - `outputs/_work/20260328_t01_amapuri_routeplan_taxi_sweep_v3/`
+  - `outputs/_work/20260328_t01_amapuri_routeplan_taxi_repeat_target_v2/`
+
+## 5. 当前决策
+
+- 继续推进的两条主线：
+  - `amap + hybrid(routeplan_uri + taxi exact gate label + reference_registration)`
+  - `amap + visual_tip(reference_registration)`
+- 当前工程主路径：
+  - 官方 `amapuri://route/plan/` 以 `GCJ-02` 驱动高德 App 原生路线页
+  - 切入 taxi 页并读取目标门点 exact gate label
+  - `green_start_pickup` / `blue_pickup_pin` 视觉取点
+  - 公共 `appmaptile` 同源候选底图 + `SIFT` 配准
+  - 以正式脚本最优结果与收敛簇共同输出 `GCJ-02`
+- `2026-03-29` 仓库治理补充：
+  - `t02_route_coldstart` 与 `t03_route_trip_experience` 已从当前正式模块集合收口到 `Historical Reference`
+  - 历史成果仍保留在原路径，用于回查、复盘和按需复用
+- 当前新增结论：
+  - 同页重复链路稳定
+  - fresh reopen 已有页面分型器
+  - `school_northwest_gate` 是当前最可用的 fresh-reopen 分型
+- 已降级但保留为备选：
+  - `amap old-version + mock_direct`
+  - `didi + mock_direct`
+- 已明确不应继续浪费时间：
+  - 当前版 AMap 的重复 `mock_direct` 探针
+  - 把滴滴继续写成 `BLOCKED`
+  - 继续把 C 盘旧工作区当 source of truth
+
+## 6. 对是否能冲击 Phase 2 的判断
+
+- 判断：`YES`
+- 原因：
+  - 没有新的运行时外部阻塞
+  - 高德视觉 tip、参考底图配准、公共 `appmaptile` 同源候选都已进入仓库
+  - 已有一条新的本地短程打车页 `SUCCESS` 样例
+  - 正式脚本已能复现 `style8` 最优候选，而不是仅靠临时人工 crop
+  - `S2 same_page` 与本地短程路线页各自都已证明公共底图配准链有效
+  - 两条优先主线都不依赖高风险逆向
+  - 下一步已收敛为“复拍本地短程 SUCCESS”与“把路线页入口迁移到合同样本”

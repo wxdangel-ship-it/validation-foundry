@@ -1,0 +1,3 @@
+id,name,input_x,input_y,output_x,output_y,status,app,reason,evidence_dir
+GS09,碧云样例,121.593000,31.241000,121.593000,31.241000,SUCCESS,amap,amap_taxi_pickup_is_my_location,/mnt/c/Users/admin/vf_stage/outputs/20260327_t01_amap_batch_tail2/GS09
+GS10,联洋样例,121.542000,31.226000,121.542000,31.226000,SUCCESS,amap,amap_taxi_pickup_is_my_location,/mnt/c/Users/admin/vf_stage/outputs/20260327_t01_amap_batch_tail2/GS10

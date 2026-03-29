@@ -1,0 +1,43 @@
+ACTIVITY MANAGER SERVICES (dumpsys activity services)
+  User 0 active services:
+  * ServiceRecord{6244ec9 u0 com.lilstiffy.mockgps/.service.MockLocationService}
+    intent={cmp=com.lilstiffy.mockgps/.service.MockLocationService}
+    packageName=com.lilstiffy.mockgps
+    processName=com.lilstiffy.mockgps
+    baseDir=/data/app/com.lilstiffy.mockgps-H6ihQZr9Xy2mA1iS_LAErA==/base.apk
+    dataDir=/data/user/0/com.lilstiffy.mockgps
+    app=ProcessRecord{6289ab1 25883:com.lilstiffy.mockgps/u0a261}
+    isForeground=true foregroundId=1001 foregroundNoti=Notification(channel=mockgps_location pri=0 contentView=null vibrate=null sound=null defaults=0x0 flags=0x6a color=0x00000000 groupKey=ranker_group1001 capsuleEnableStatus=-1 vis=PRIVATE)
+    createTime=-1m7s579ms startingBgTimeout=--
+    lastActivity=-1m7s577ms restartTime=-1m7s578ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+    Bindings:
+    * IntentBindRecord{6198526 CREATE}:
+      intent={cmp=com.lilstiffy.mockgps/.service.MockLocationService}
+      binder=android.os.BinderProxy@654edd5
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{58f6ec1 ProcessRecord{6289ab1 25883:com.lilstiffy.mockgps/u0a261}}
+        Per-process Connections:
+          ConnectionRecord{626cf19 u0 CR com.lilstiffy.mockgps/.service.MockLocationService:@58f6e75}
+    All Connections:
+      ConnectionRecord{626cf19 u0 CR com.lilstiffy.mockgps/.service.MockLocationService:@58f6e75}
+
+  Destroying services:
+  * Destroy ServiceRecord{63548e9 u0 com.lilstiffy.mockgps/.service.MockLocationService}
+    intent={cmp=com.lilstiffy.mockgps/.service.MockLocationService}
+    packageName=com.lilstiffy.mockgps
+    processName=com.lilstiffy.mockgps
+    baseDir=/data/app/com.lilstiffy.mockgps-rYUttkLGEiq6VlQH-5Pavw==/base.apk
+    dataDir=/data/user/0/com.lilstiffy.mockgps
+    app=null
+    createTime=-9h9m53s779ms startingBgTimeout=--
+    lastActivity=-9h9m45s394ms restartTime=-- createdFromFg=false
+    startRequested=false delayedStop=false stopIfKilled=false callStart=false lastStartId=2
+    destroying=true destroyTime=-9h9m45s393ms
+    restartCount=0 restartDelay=-- nextRestartTime=-9h9m45s464ms crashCount=1
+
+  Connection bindings to services:
+  * ConnectionRecord{626cf19 u0 CR com.lilstiffy.mockgps/.service.MockLocationService:@58f6e75}
+    binding=AppBindRecord{58f6ec1 com.lilstiffy.mockgps/.service.MockLocationService:com.lilstiffy.mockgps}
+    activity=ActivityRecord{61b0183 u0 com.lilstiffy.mockgps/.MainActivity t307}
+    conn=android.os.BinderProxy@58f6e75 flags=0x1

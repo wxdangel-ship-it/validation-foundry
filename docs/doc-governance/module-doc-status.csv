@@ -1,0 +1,5 @@
+module,path,status,doc_surface,recommended_action,notes
+_template,modules/_template,template-artifact,template-ready,copy-and-concretize,not-a-business-module
+t01_pickup_point_validation,modules/t01_pickup_point_validation,active,formal-module-surface,phase1-ready,phase0-doc-baseline-complete
+t02_route_coldstart,modules/t02_route_coldstart,active,formal-module-surface,continue-phase2-collection,route-draft-pipeline-and-qa-baseline-available
+t03_route_trip_experience,modules/t03_route_trip_experience,active,formal-module-surface,continue-phase0-poc-hardening,single-sample-route-trip-media-poc-launched

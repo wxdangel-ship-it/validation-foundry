@@ -1,0 +1,52 @@
+{
+  "date": "2026-03-27",
+  "module": "t01_pickup_point_validation",
+  "stage": "Phase 2/3 replay after login + gps-only",
+  "status": "BLOCKED",
+  "device": {
+    "model": "Huawei Mate 20 Pro",
+    "android": "10",
+    "serial": "S2DGL19C12000860"
+  },
+  "mock_gps": {
+    "status": "PASS",
+    "provider": "gps provider [mock]",
+    "target_gcj02": {
+      "x": 121.473701,
+      "y": 31.230416
+    }
+  },
+  "system_tweaks": {
+    "logged_in_apps": [
+      "com.sdu.didi.psnger",
+      "com.autonavi.minimap"
+    ],
+    "location_providers_allowed": "gps",
+    "network_provider_removed_from_allowed_set": true
+  },
+  "app_results": [
+    {
+      "app": "didi",
+      "status": "BLOCKED",
+      "failure_type": "app_ignores_mock_location",
+      "reason": "滴滴首页出现重新定位控件，但点击并等待后页面仍为北京市，且要求手输上车点。",
+      "evidence": [
+        "didi_red_relocate.png",
+        "didi_red_relocate.txt"
+      ]
+    },
+    {
+      "app": "amap",
+      "status": "BLOCKED",
+      "failure_type": "service_entry_drift_or_redirect",
+      "reason": "高德可启动并进入打车相关入口，但一条路径停在北京上车点，另一条路径漂移到企业版页面，未形成稳定普通用户链路。",
+      "evidence": [
+        "amap_taxi_pickup_beijing.png",
+        "amap_enter_taxi.txt",
+        "amap_taxi_redirect_enterprise.png",
+        "amap_final_gpsonly_clean.txt"
+      ]
+    }
+  ],
+  "overall_conclusion": "both_app_paths_blocked"
+}

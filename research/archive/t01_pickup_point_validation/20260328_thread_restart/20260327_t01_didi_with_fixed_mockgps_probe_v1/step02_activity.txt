@@ -1,0 +1,41 @@
+12:    * TaskRecord{63234a5 #312 A=10251:com.sdu.didi.psnger U=0 StackId=240 sz=1}
+14:      affinity=10251:com.sdu.didi.psnger
+15:      intent={act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.sdu.didi.psnger/com.didi.sdk.app.launch.splash.SplashActivity}
+16:      mActivityComponent=com.sdu.didi.psnger/com.didi.sdk.app.launch.splash.SplashActivity
+19:      Activities=[ActivityRecord{6326248 u0 com.sdu.didi.psnger/com.didi.sdk.app.MainActivity t312}]
+21:      mRootProcess=ProcessRecord{6280eb1 30767:com.sdu.didi.psnger/u0a251}
+24:      * Hist #0: ActivityRecord{6326248 u0 com.sdu.didi.psnger/com.didi.sdk.app.MainActivity t312}
+25:          packageName=com.sdu.didi.psnger processName=com.sdu.didi.psnger
+26:          launchedFromUid=10251 launchedFromPackage=com.sdu.didi.psnger userId=0
+27:          app=ProcessRecord{6280eb1 30767:com.sdu.didi.psnger/u0a251}
+28:          Intent { flg=0x10000000 pkg=com.sdu.didi.psnger cmp=com.sdu.didi.psnger/com.didi.sdk.app.MainActivity (has extras) }
+29:          frontOfTask=true task=TaskRecord{63234a5 #312 A=10251:com.sdu.didi.psnger U=0 StackId=240 sz=1}
+30:          taskAffinity=10251:com.sdu.didi.psnger
+31:          mActivityComponent=com.sdu.didi.psnger/com.didi.sdk.app.MainActivity
+32:          baseDir=/data/app/com.sdu.didi.psnger-m5sBg6a7NdDU7FMQr2_o_w==/base.apk
+33:          dataDir=/data/user/0/com.sdu.didi.psnger
+53:      TaskRecord{63234a5 #312 A=10251:com.sdu.didi.psnger U=0 StackId=240 sz=1}
+54:        Run #0: ActivityRecord{6326248 u0 com.sdu.didi.psnger/com.didi.sdk.app.MainActivity t312}
+56:    mResumedActivity: ActivityRecord{6326248 u0 com.sdu.didi.psnger/com.didi.sdk.app.MainActivity t312}
+57:    mLastPausedActivity: ActivityRecord{6234783 u0 com.sdu.didi.psnger/com.didi.sdk.app.launch.splash.SplashActivity t-1 f}
+68:    * TaskRecord{62a56a5 #307 A=10261:com.lilstiffy.mockgps U=0 StackId=235 sz=1}
+70:      affinity=10261:com.lilstiffy.mockgps
+71:      intent={flg=0x10000000 cmp=com.lilstiffy.mockgps/.MainActivity}
+72:      mActivityComponent=com.lilstiffy.mockgps/.MainActivity
+75:      Activities=[ActivityRecord{61b0183 u0 com.lilstiffy.mockgps/.MainActivity t307}]
+77:      mRootProcess=ProcessRecord{6289ab1 25883:com.lilstiffy.mockgps/u0a261}
+80:      * Hist #0: ActivityRecord{61b0183 u0 com.lilstiffy.mockgps/.MainActivity t307}
+81:          packageName=com.lilstiffy.mockgps processName=com.lilstiffy.mockgps
+83:          app=ProcessRecord{6289ab1 25883:com.lilstiffy.mockgps/u0a261}
+84:          Intent { flg=0x10000000 cmp=com.lilstiffy.mockgps/.MainActivity (has extras) }
+85:          frontOfTask=true task=TaskRecord{62a56a5 #307 A=10261:com.lilstiffy.mockgps U=0 StackId=235 sz=1}
+86:          taskAffinity=10261:com.lilstiffy.mockgps
+87:          mActivityComponent=com.lilstiffy.mockgps/.MainActivity
+88:          baseDir=/data/app/com.lilstiffy.mockgps-H6ihQZr9Xy2mA1iS_LAErA==/base.apk
+89:          dataDir=/data/user/0/com.lilstiffy.mockgps
+113:      TaskRecord{62a56a5 #307 A=10261:com.lilstiffy.mockgps U=0 StackId=235 sz=1}
+114:        Run #0: ActivityRecord{61b0183 u0 com.lilstiffy.mockgps/.MainActivity t307}
+116:    mLastPausedActivity: ActivityRecord{61b0183 u0 com.lilstiffy.mockgps/.MainActivity t307}
+464: ResumedActivity:ActivityRecord{6326248 u0 com.sdu.didi.psnger/com.didi.sdk.app.MainActivity t312}
+466:  ResumedActivity: ActivityRecord{6326248 u0 com.sdu.didi.psnger/com.didi.sdk.app.MainActivity t312}
+470:mLastResumedActivity=ActivityRecord{6326248 u0 com.sdu.didi.psnger/com.didi.sdk.app.MainActivity t312}

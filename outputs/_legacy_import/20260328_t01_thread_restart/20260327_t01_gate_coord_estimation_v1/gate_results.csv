@@ -1,0 +1,5 @@
+﻿name,poiid,status,method,x,y,tip_x,tip_y
+多美滋婴幼儿食品有限公司(宁桥路),B00156F7BW,SUCCESS,exact_location_from_gate_search_full_json,121.60856,31.24907,537.5,529.0
+多美滋婴幼儿食品有限公司(宁桥路)停车场,B0LK9ZA90V,SUCCESS,exact_location_from_gate_search_full_json,121.608375,31.249775,516.5,449.0
+多美滋婴幼儿食品有限公司(东南门),,SUCCESS,screen_calibrated_from_company_parking_same_view,121.60976046703298,31.2478715,673.7692307692307,665.0
+多美滋婴幼儿食品有限公司(西北门),B0FFGTF7QS,SUCCESS,screen_calibrated_from_company_parking_same_view_plus_share_poiid,121.60857761904762,31.249052375,539.5,531.0

@@ -1,0 +1,3 @@
+List of devices attached
+S2DGL19C12000860	device
+

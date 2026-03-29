@@ -1,0 +1,30 @@
+{
+  "date": "2026-03-27",
+  "device": {
+    "model": "Huawei Mate 20 Pro",
+    "product": "LYA-AL00",
+    "android": "10",
+    "serial": "S2DGL19C12000860"
+  },
+  "module": "T01",
+  "status": "BLOCKED",
+  "blocking_stage": "Phase 2/3 app chain validation on real device",
+  "findings": [
+    {
+      "app": "mockgps",
+      "status": "SUCCESS",
+      "reason": "Real-device mock GPS can be injected after map tap then Start mocking."
+    },
+    {
+      "app": "didi",
+      "status": "BLOCKED",
+      "reason": "After 定位 and stability wait, UI remains on 北京/茉藜园-东北门 instead of the mocked Shanghai point, so pickup extraction would be untrustworthy."
+    },
+    {
+      "app": "amap",
+      "status": "BLOCKED",
+      "reason": "AMap home receives mock GPS, but taxi-service entry shows a mandatory phone-login wall under the no-login contract."
+    }
+  ],
+  "evidence_dir": "/mnt/c/Users/admin/vf_stage/20260327_t01_real_device_blocked"
+}

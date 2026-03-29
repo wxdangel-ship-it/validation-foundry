@@ -1,0 +1,16 @@
+[build-system]
+requires = ["hatchling>=1.27.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "validation-foundry"
+version = "0.1.0"
+description = "Evidence-first mobile pickup point validation project."
+readme = "docs/PROJECT_BRIEF.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.pytest.ini_options]
+markers = [
+  "smoke: lightweight environment or workflow smoke tests",
+]

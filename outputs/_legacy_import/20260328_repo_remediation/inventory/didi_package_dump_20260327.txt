@@ -1,0 +1,872 @@
+Activity Resolver Table:
+  Schemes:
+      pushtravel:
+        5eba759 com.sdu.didi.psnger/com.didi.sdk.app.scheme.SchemeDispatcherActivity filter 5ebad4e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "pushtravel"
+      onetravel:
+        5ee48cd com.sdu.didi.psnger/com.didi.sdk.app.MainActivity filter 5e290cc
+          Action: "android.nfc.action.NDEF_DISCOVERED"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "onetravel"
+          Authority: "bike": -1
+        5eba759 com.sdu.didi.psnger/com.didi.sdk.app.scheme.SchemeDispatcherActivity filter 5ebad0d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "onetravel"
+          Authority: "oneshare": -1
+        5eba759 com.sdu.didi.psnger/com.didi.sdk.app.scheme.SchemeDispatcherActivity filter 5ebad41
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "onetravel"
+        5eba759 com.sdu.didi.psnger/com.didi.sdk.app.scheme.SchemeDispatcherActivity filter 5ebad75
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "onetravel"
+          Authority: "pushpage": -1
+          Path: "PatternMatcher{LITERAL: /safety_sos}"
+      onesdkh5invoke:
+        5edb1f3 com.sdu.didi.psnger/com.didi.security.diface.appeal.activity.TakePhotoAct filter 5edbc98
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "onesdkh5invoke"
+          Authority: "takephoto": -1
+      diditripcard:
+        5eba759 com.sdu.didi.psnger/com.didi.sdk.app.scheme.SchemeDispatcherActivity filter 5ebacd9
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "diditripcard"
+      diface:
+        5eca2b1 com.sdu.didi.psnger/com.didichuxing.dfbasesdk.webview.DFWebviewAct filter 5ecae09
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "diface"
+          Authority: "viewwebpage": -1
+      onebike:
+        5ec3d9f com.sdu.didi.psnger/com.didi.ride.debug.RideEnvSwitchActivity filter 5e29168
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "onebike"
+          Authority: "envswitch": -1
+      didipasnger:
+        5eba68e com.sdu.didi.psnger/com.didi.pay.activity.AlipaySignBackActivity filter 5e291dd
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "didipasnger"
+          Authority: "com.sdu.didi.psnger_financial_cashier_alipay_pay_back": -1
+        5eba759 com.sdu.didi.psnger/com.didi.sdk.app.scheme.SchemeDispatcherActivity filter 5ebac7e
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "didipasnger"
+          Authority: "didi_apk_intalled_scheme": -1
+        5eba759 com.sdu.didi.psnger/com.didi.sdk.app.scheme.SchemeDispatcherActivity filter 5ebac8b
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "didipasnger"
+          Authority: "common_marketing_host": -1
+        5eba759 com.sdu.didi.psnger/com.didi.sdk.app.scheme.SchemeDispatcherActivity filter 5ebac98
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "didipasnger"
+          Authority: "didi_apk_installed_scheme_extend": -1
+        5eba759 com.sdu.didi.psnger/com.didi.sdk.app.scheme.SchemeDispatcherActivity filter 5ebaca5
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "didipasnger"
+          Authority: "nova": -1
+        5eba759 com.sdu.didi.psnger/com.didi.sdk.app.scheme.SchemeDispatcherActivity filter 5ebacb2
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "didipasnger"
+          Authority: "alipay_sign_back": -1
+        5eba759 com.sdu.didi.psnger/com.didi.sdk.app.scheme.SchemeDispatcherActivity filter 5ebacbf
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "didipasnger"
+          Authority: "alipay_bind_back": -1
+        5eba759 com.sdu.didi.psnger/com.didi.sdk.app.scheme.SchemeDispatcherActivity filter 5ebaccc
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "didipasnger"
+          Authority: "didi_o2o_host": -1
+        5eba759 com.sdu.didi.psnger/com.didi.sdk.app.scheme.SchemeDispatcherActivity filter 5ebad68
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "didipasnger"
+          Authority: "alipay_pay_back": -1
+        5eba759 com.sdu.didi.psnger/com.didi.sdk.app.scheme.SchemeDispatcherActivity filter 5ebad1a
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "didipasnger"
+          Authority: "qqpay_sign_back": -1
+      OneTravel:
+        5eba759 com.sdu.didi.psnger/com.didi.sdk.app.scheme.SchemeDispatcherActivity filter 5ebacf3
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "OneTravel"
+          Authority: "pay": -1
+          Path: "PatternMatcher{LITERAL: /payagent_settting}"
+        5eba759 com.sdu.didi.psnger/com.didi.sdk.app.scheme.SchemeDispatcherActivity filter 5ebad00
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "OneTravel"
+          Authority: "pay": -1
+          Path: "PatternMatcher{LITERAL: /payment_method}"
+        5eba759 com.sdu.didi.psnger/com.didi.sdk.app.scheme.SchemeDispatcherActivity filter 5ebad27
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "OneTravel"
+      diditaxi:
+        5eba633 com.sdu.didi.psnger/com.didi.pay.base.SchemeActivity filter 5e291b6
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "diditaxi"
+          Authority: "didipay": -1
+          Path: "PatternMatcher{LITERAL: /callback/com.sdu.didi.psnger/hummer}"
+        5ec2b4b com.sdu.didi.psnger/com.didi.unifiedPay.component.activity.SchemeActivity filter 5ec0c57
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "diditaxi"
+          Authority: "didipay": -1
+          Path: "PatternMatcher{LITERAL: /callback}"
+        5ec2b9f com.sdu.didi.psnger/com.xiaojukeji.finance.dcep.DcepPayEntryActivity filter 5ec0cbf
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "diditaxi"
+          Authority: "unipay": -1
+          Path: "PatternMatcher{LITERAL: /com.sdu.didi.psnger/dcep}"
+        5c23a48 com.sdu.didi.psnger/com.didi.universal.pay.sdk.method.bankPay.SchemeActivity filter 5ec0d0d
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "diditaxi"
+          Authority: "didipay": -1
+          Path: "PatternMatcher{LITERAL: /callback/com.sdu.didi.psnger/universal}"
+      drn:
+        5eba759 com.sdu.didi.psnger/com.didi.sdk.app.scheme.SchemeDispatcherActivity filter 5ebad34
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "drn"
+      geo:
+        5eba759 com.sdu.didi.psnger/com.didi.sdk.app.scheme.SchemeDispatcherActivity filter 5ebac71
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "geo"
+      didi:
+        5eca360 com.sdu.didi.psnger/com.didi.sdk.push.HuaweiPushIntentReceiver filter 5ecae57
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "didi"
+          Authority: "huawei": -1
+          Path: "PatternMatcher{LITERAL: /push}"
+        5eca367 com.sdu.didi.psnger/com.didi.sdk.push.vivo.VivoPushClickHandleActivity filter 5ecae71
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "didi"
+          Authority: "vivo": -1
+          Path: "PatternMatcher{LITERAL: /push}"
+        5eca37c com.sdu.didi.psnger/com.didi.sdk.push.oppo.OppoPushIntentReceiver filter 5ecaea5
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "didi"
+          Authority: "oppo": -1
+          Path: "PatternMatcher{LITERAL: /push}"
+        5eca39f com.sdu.didi.psnger/com.didi.sdk.push.HonorPushIntentReceiver filter 5ecaed9
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "didi"
+          Authority: "honor": -1
+          Path: "PatternMatcher{LITERAL: /push}"
+      https:
+        5eba759 com.sdu.didi.psnger/com.didi.sdk.app.scheme.SchemeDispatcherActivity filter 5ebad82
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "https"
+          Authority: "v.didi.cn": -1
+          Path: "PatternMatcher{GLOB: /np/.*}"
+          AutoVerify=true
+      omega6cc519cf5f:
+        5eba759 com.sdu.didi.psnger/com.didi.sdk.app.scheme.SchemeDispatcherActivity filter 5ebac64
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "omega6cc519cf5f"
+      didi_alipay_login:
+        5eba7fa com.sdu.didi.psnger/com.alipay.sdk.app.AlipayResultActivity filter 5ec0c09
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "didi_alipay_login"
+      didicommon:
+        5eba759 com.sdu.didi.psnger/com.didi.sdk.app.scheme.SchemeDispatcherActivity filter 5ebace6
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "didicommon"
+          Authority: "didi_common_url": -1
+      dididriver:
+        5c23ab8 com.sdu.didi.psnger/com.didi.map.setting.sdk.MapSettingStart filter 5ec0d68
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "dididriver"
+          Authority: "setting": -1
+          Path: "PatternMatcher{LITERAL: /navigation}"
+        5eca29c com.sdu.didi.psnger/com.didi.unifylogin.entrance.AuthorizeActivity filter 5ec0dea
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Category: "android.intent.category.BROWSABLE"
+          Scheme: "dididriver"
+          Authority: "unifylogin": -1
+      dfglobal:
+        5eca2b1 com.sdu.didi.psnger/com.didichuxing.dfbasesdk.webview.DFWebviewAct filter 5ecae16
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "dfglobal"
+          Authority: "viewwebpage": -1
+      qwalletpay100884080:
+        5ee48e9 com.sdu.didi.psnger/.wxapi.QQPayEntryActivity filter 5e290d9
+          Action: "android.intent.action.VIEW"
+          Category: "android.intent.category.BROWSABLE"
+          Category: "android.intent.category.DEFAULT"
+          Scheme: "qwalletpay100884080"
+
+  Non-Data Actions:
+      didi.passenger.intent.action.PlatformProxyWebActivity:
+        5eba7c9 com.sdu.didi.psnger/com.didi.sdk.webview.PassengerProxyWebActivity filter 5ebaddd
+          Action: "didi.passenger.intent.action.PlatformProxyWebActivity"
+          Category: "android.intent.category.DEFAULT"
+      report_repair_new:
+        5ec3da6 com.sdu.didi.psnger/com.didi.bike.ui.activity.scan.BikeScanActivity filter 5e2915b
+          Action: "report_repair_new"
+          Category: "android.intent.category.DEFAULT"
+      com.didi.pay.web.WebProxyActivity:
+        5eba641 com.sdu.didi.psnger/com.didi.pay.web.WebProxyActivity filter 5e291c3
+          Action: "com.didi.pay.web.WebProxyActivity"
+          Category: "android.intent.category.DEFAULT"
+      com.didi.universal.pay:
+        5eba687 com.sdu.didi.psnger/com.didi.pay.activity.UniversalDispatchActivity filter 5e291d0
+          Action: "com.didi.universal.pay"
+          Category: "android.intent.category.DEFAULT"
+      com.didi.sdk.payment.newwallet:
+        5ec2b6e com.sdu.didi.psnger/com.didi.payment.wallet.china.wallet.view.activity.WalletMainListActivity filter 5ec0c8b
+          Action: "com.didi.sdk.payment.newwallet"
+          Category: "android.intent.category.DEFAULT"
+      android.intent.action.MAIN:
+        5eba713 com.sdu.didi.psnger/com.didi.sdk.app.launch.splash.SplashActivity filter 5ebac23
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+        5eba728 com.sdu.didi.psnger/com.didi.sdk.app.launch.splash.IconChangeAliasId1 filter 5ebac3d
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+      com.didi.home:
+        5ee48cd com.sdu.didi.psnger/com.didi.sdk.app.MainActivity filter 5e290bf
+          Action: "com.didi.home"
+          Category: "android.intent.category.DEFAULT"
+      com.didi.push:
+        5eba759 com.sdu.didi.psnger/com.didi.sdk.app.scheme.SchemeDispatcherActivity filter 5ebad5b
+          Action: "com.didi.push"
+          Category: "android.intent.category.DEFAULT"
+      didi.passenger.intent.action.WebActivity:
+        5eba7b4 com.sdu.didi.psnger/com.didi.sdk.webview.WebActivity filter 5ebadd0
+          Action: "didi.passenger.intent.action.WebActivity"
+          Category: "android.intent.category.DEFAULT"
+      com.xiaojukeji.action.POI_CONFIRM_PAGE:
+        5ec2acd com.sdu.didi.psnger/com.sdk.address.address.confirm.poiconfirm.PoiSearchConfirmActivity filter 5ec0c4a
+          Action: "com.xiaojukeji.action.POI_CONFIRM_PAGE"
+          Category: "android.intent.category.DEFAULT"
+      com.didi.sdk.payment.creditcard:
+        5c23a64 com.sdu.didi.psnger/com.didi.payment.paymethod.creditpay.activity.CreditPayActivity filter 5ec0d27
+          Action: "com.didi.sdk.payment.creditcard"
+          Category: "android.intent.category.DEFAULT"
+        5eca21e com.sdu.didi.psnger/com.didi.payment.creditcard.china.view.activity.CreditCardAddActivity filter 5ec0da9
+          Action: "com.didi.sdk.payment.creditcard"
+          Category: "android.intent.category.DEFAULT"
+      com.sdu.didi.psnger.network.self.diagnosis:
+        5eca3ad com.sdu.didi.psnger/com.didi.one.netdiagnosis.DiagnosisActivity filter 5ecaef3
+          Action: "com.sdu.didi.psnger.network.self.diagnosis"
+          Category: "android.intent.category.DEFAULT"
+      com.didi.sdk.payment.signlist:
+        5ec2b8a com.sdu.didi.psnger/com.didi.payment.wallet.china.signlist.view.activity.SignListActivity filter 5ec0cb2
+          Action: "com.didi.sdk.payment.signlist"
+          Category: "android.intent.category.DEFAULT"
+      com.didi.sdk.localeactivity:
+        5eba767 com.sdu.didi.psnger/com.didi.sdk.sidebar.setup.mutilocale.MultiLocaleActivityImpl filter 5ebad8f
+          Action: "com.didi.sdk.localeactivity"
+          Category: "android.intent.category.DEFAULT"
+      com.didi.sdk.payment.sign:
+        5ec2b60 com.sdu.didi.psnger/com.didi.payment.wallet.china.signlist.view.activity.SignActivity filter 5ec0c71
+          Action: "com.didi.sdk.payment.sign"
+          Category: "android.intent.category.DEFAULT"
+      didi.passenger.intent.action.FusionWebActivity:
+        5eba7d0 com.sdu.didi.psnger/com.didi.sdk.fusionbridge.FusionWebActivity filter 5ebadea
+          Action: "didi.passenger.intent.action.FusionWebActivity"
+          Category: "android.intent.category.DEFAULT"
+      com.didi.im.action.PUSH_DISPATCHER:
+        5edb017 com.sdu.didi.psnger/com.didi.beatles.im.access.notify.IMDispatcherActivity filter 5ecaf0d
+          Action: "com.didi.im.action.PUSH_DISPATCHER"
+          Category: "android.intent.category.DEFAULT"
+      com.didi.universal.prepay:
+        5e2a01e com.sdu.didi.psnger/com.didi.universal.pay.onecar.view.act.UniversalPrePayActivity filter 5e29182
+          Action: "com.didi.universal.prepay"
+          Category: "android.intent.category.DEFAULT"
+      com.didi.sdk.splash.SplashActivity:
+        5eba713 com.sdu.didi.psnger/com.didi.sdk.app.launch.splash.SplashActivity filter 5ebac30
+          Action: "com.didi.sdk.splash.SplashActivity"
+        5eba728 com.sdu.didi.psnger/com.didi.sdk.app.launch.splash.IconChangeAliasId1 filter 5ebac4a
+          Action: "com.didi.sdk.splash.SplashActivity"
+      com.didi.bus.gongjiao.debug:
+        5e2a087 com.sdu.didi.psnger/com.didi.bus.app.debug.debugmode.DGADebugCenterActivity filter 5e2919c
+          Action: "com.didi.bus.gongjiao.debug"
+          Category: "android.intent.category.DEFAULT"
+      com.sdu.didi.psnger.com.didi.sdk.push.ui.check:
+        5edb05d com.sdu.didi.psnger/com.didi.sdk.push.ui.CheckStateActivity filter 5ecaf34
+          Action: "com.sdu.didi.psnger.com.didi.sdk.push.ui.check"
+          Category: "android.intent.category.DEFAULT"
+      com.didi.universal.pay.sdk.web.WebProxyActivity:
+        5c23a4f com.sdu.didi.psnger/com.didi.universal.pay.sdk.web.WebProxyActivity filter 5ec0d1a
+          Action: "com.didi.universal.pay.sdk.web.WebProxyActivity"
+          Category: "android.intent.category.DEFAULT"
+      com.didi.payment.wallet.china.web.WalletWebProxyActivity:
+        5ec2b59 com.sdu.didi.psnger/com.didi.payment.wallet.china.web.WalletWebProxyActivity filter 5ec0c64
+          Action: "com.didi.payment.wallet.china.web.WalletWebProxyActivity"
+          Category: "android.intent.category.DEFAULT"
+      com.didi.universal.general:
+        5e2a010 com.sdu.didi.psnger/com.didi.universal.pay.onecar.view.act.UniversalPaymentActivity filter 5e29175
+          Action: "com.didi.universal.general"
+          Category: "android.intent.category.DEFAULT"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      android.intent.action.BATTERY_OKAY:
+        5edb198 com.sdu.didi.psnger/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 5ecafea
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      com.xiaomi.mipush.MESSAGE_ARRIVED:
+        5eca383 com.sdu.didi.psnger/com.didi.sdk.push.mi.MiPushReceiver filter 5ecaebf
+          Action: "com.xiaomi.mipush.MESSAGE_ARRIVED"
+      android.intent.action.ACTION_POWER_DISCONNECTED:
+        5edb191 com.sdu.didi.psnger/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 5ecafd0
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      com.xiaomi.mipush.ERROR:
+        5eca383 com.sdu.didi.psnger/com.didi.sdk.push.mi.MiPushReceiver filter 5ecaecc
+          Action: "com.xiaomi.mipush.ERROR"
+      com.huawei.android.push.intent.REGISTRATION:
+        5edc041 com.sdu.didi.psnger/com.huawei.hms.support.api.push.PushReceiver filter 5edbcbf
+          Action: "com.huawei.android.push.intent.REGISTRATION"
+          Action: "com.huawei.android.push.intent.RECEIVE"
+      androidx.profileinstaller.action.SAVE_PROFILE:
+        5edb1d7 com.sdu.didi.psnger/androidx.profileinstaller.ProfileInstallReceiver filter 5edbc7e
+          Action: "androidx.profileinstaller.action.SAVE_PROFILE"
+      android.intent.action.DEVICE_STORAGE_LOW:
+        5edb19f com.sdu.didi.psnger/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 5ebada9
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      android.net.conn.CONNECTIVITY_CHANGE:
+        5edb1a6 com.sdu.didi.psnger/androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy filter 5edbc16
+          Action: "android.net.conn.CONNECTIVITY_CHANGE"
+      com.huawei.intent.action.PUSH_DELAY_NOTIFY:
+        5edc033 com.sdu.didi.psnger/com.huawei.hms.support.api.push.PushMsgReceiver filter 5edbcb2
+          Action: "com.huawei.intent.action.PUSH_DELAY_NOTIFY"
+          Action: "com.huawei.intent.action.PUSH"
+      android.intent.action.DEVICE_STORAGE_OK:
+        5edb19f com.sdu.didi.psnger/androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy filter 5ebada9
+          Action: "android.intent.action.DEVICE_STORAGE_LOW"
+          Action: "android.intent.action.DEVICE_STORAGE_OK"
+      com.samsung.android.app.spage.action.CARD_UPDATE:
+        5eba6f0 com.sdu.didi.psnger/com.didi.sdk.app.widget.UtCardWidget filter 5ebac16
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "com.samsung.android.app.spage.action.CARD_UPDATE"
+          Action: "com.ut.widget.UPDATE"
+      com.huawei.android.push.intent.RECEIVE:
+        5edc041 com.sdu.didi.psnger/com.huawei.hms.support.api.push.PushReceiver filter 5edbcbf
+          Action: "com.huawei.android.push.intent.REGISTRATION"
+          Action: "com.huawei.android.push.intent.RECEIVE"
+      com.vivo.pushclient.action.RECEIVE:
+        5eca375 com.sdu.didi.psnger/com.didi.sdk.push.vivo.VivoPushReceiver filter 5ecae7e
+          Action: "com.vivo.pushclient.action.RECEIVE"
+      com.xiaojukeji.action.DELETE_ACCOUNT:
+        5e9b344 com.sdu.didi.psnger/com.didi.nav.driving.entrance.scheme.CancellationBroadcast filter 5e2914e
+          Action: "com.xiaojukeji.action.DELETE_ACCOUNT"
+          Category: "android.intent.category.DEFAULT"
+      androidx.profileinstaller.action.INSTALL_PROFILE:
+        5edb1d7 com.sdu.didi.psnger/androidx.profileinstaller.ProfileInstallReceiver filter 5edbc64
+          Action: "androidx.profileinstaller.action.INSTALL_PROFILE"
+      com.didi.sdk.apm.cmd:
+        5eca336 com.sdu.didi.psnger/com.didi.sdk.apm.CommandReceiver filter 5ecae23
+          Action: "com.didi.sdk.apm.cmd"
+      android.intent.action.BATTERY_LOW:
+        5edb198 com.sdu.didi.psnger/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy filter 5ecafea
+          Action: "android.intent.action.BATTERY_OKAY"
+          Action: "android.intent.action.BATTERY_LOW"
+      android.intent.action.TIMEZONE_CHANGED:
+        5edb1ad com.sdu.didi.psnger/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 5edbc30
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      android.intent.action.TIME_SET:
+        5edb1ad com.sdu.didi.psnger/androidx.work.impl.background.systemalarm.RescheduleReceiver filter 5edbc30
+          Action: "android.intent.action.TIME_SET"
+          Action: "android.intent.action.TIMEZONE_CHANGED"
+      androidx.profileinstaller.action.SKIP_FILE:
+        5edb1d7 com.sdu.didi.psnger/androidx.profileinstaller.ProfileInstallReceiver filter 5edbc71
+          Action: "androidx.profileinstaller.action.SKIP_FILE"
+      androidx.profileinstaller.action.BENCHMARK_OPERATION:
+        5edb1d7 com.sdu.didi.psnger/androidx.profileinstaller.ProfileInstallReceiver filter 5edbc8b
+          Action: "androidx.profileinstaller.action.BENCHMARK_OPERATION"
+      android.intent.action.ACTION_POWER_CONNECTED:
+        5edb191 com.sdu.didi.psnger/androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy filter 5ecafd0
+          Action: "android.intent.action.ACTION_POWER_CONNECTED"
+          Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+      com.xiaomi.push.PING_TIMER:
+        5eca38a com.sdu.didi.psnger/com.xiaomi.push.service.receivers.PingReceiver filter 5ecae4a
+          Action: "com.xiaomi.push.PING_TIMER"
+      com.xiaomi.mipush.RECEIVE_MESSAGE:
+        5eca383 com.sdu.didi.psnger/com.didi.sdk.push.mi.MiPushReceiver filter 5ecaeb2
+          Action: "com.xiaomi.mipush.RECEIVE_MESSAGE"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        5eba6e2 com.sdu.didi.psnger/com.didi.sdk.app.widget.UtAppWidgetProvider filter 5ebac09
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+        5eba6f0 com.sdu.didi.psnger/com.didi.sdk.app.widget.UtCardWidget filter 5ebac16
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "com.samsung.android.app.spage.action.CARD_UPDATE"
+          Action: "com.ut.widget.UPDATE"
+      androidx.work.diagnostics.REQUEST_DIAGNOSTICS:
+        5edb1c2 com.sdu.didi.psnger/androidx.work.impl.diagnostics.DiagnosticsReceiver filter 5edbc4a
+          Action: "androidx.work.diagnostics.REQUEST_DIAGNOSTICS"
+      com.huawei.intent.action.PUSH:
+        5edc033 com.sdu.didi.psnger/com.huawei.hms.support.api.push.PushMsgReceiver filter 5edbcb2
+          Action: "com.huawei.intent.action.PUSH_DELAY_NOTIFY"
+          Action: "com.huawei.intent.action.PUSH"
+      androidx.work.impl.background.systemalarm.UpdateProxies:
+        5edb1bb com.sdu.didi.psnger/androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver filter 5edbc3d
+          Action: "androidx.work.impl.background.systemalarm.UpdateProxies"
+      com.ut.widget.UPDATE:
+        5eba6f0 com.sdu.didi.psnger/com.didi.sdk.app.widget.UtCardWidget filter 5ebac16
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+          Action: "com.samsung.android.app.spage.action.CARD_UPDATE"
+          Action: "com.ut.widget.UPDATE"
+
+Service Resolver Table:
+  Non-Data Actions:
+      com.huawei.hms.location.action.common.geofence:
+        5c367e3 com.sdu.didi.psnger/com.didi.sdk.fence.huawei.HuaweiFenceService filter 5ec0c23 permission com.huawei.hms.location.permission.PENDINGINTENT
+          Action: "com.huawei.hms.location.action.common.geofence"
+      im.service.PollingService:
+        5c36747 com.sdu.didi.psnger/com.didi.beatles.im.common.IMPollingService filter 5ecaf00
+          Action: "im.service.PollingService"
+      com.huawei.push.msg.NOTIFY_MSG:
+        5c366db com.sdu.didi.psnger/com.huawei.hms.support.api.push.service.HmsMsgService filter 5edbc23
+          Action: "com.huawei.push.msg.NOTIFY_MSG"
+          Action: "com.huawei.push.msg.PASSBY_MSG"
+      binding:
+        5c36711 com.sdu.didi.psnger/com.alibaba.android.bindingx.plugin.weex.WXBindingXModuleService filter 5edbca5
+          Action: "bindingx"
+          Action: "binding"
+          Action: "expressionBinding"
+      com.heytap.mcs.action.RECEIVE_MCS_MESSAGE:
+        5c36783 com.sdu.didi.psnger/com.didi.sdk.push.oppo.OppoDataMessageCallbackService filter 5ecae8b permission com.heytap.mcs.permission.SEND_PUSH_MESSAGE
+          Action: "com.heytap.mcs.action.RECEIVE_MCS_MESSAGE"
+          Action: "com.heytap.msp.push.RECEIVE_MCS_MESSAGE"
+      bindingx:
+        5c36711 com.sdu.didi.psnger/com.alibaba.android.bindingx.plugin.weex.WXBindingXModuleService filter 5edbca5
+          Action: "bindingx"
+          Action: "binding"
+          Action: "expressionBinding"
+      com.heytap.msp.push.RECEIVE_MCS_MESSAGE:
+        5c36783 com.sdu.didi.psnger/com.didi.sdk.push.oppo.OppoDataMessageCallbackService filter 5ecae8b permission com.heytap.mcs.permission.SEND_PUSH_MESSAGE
+          Action: "com.heytap.mcs.action.RECEIVE_MCS_MESSAGE"
+          Action: "com.heytap.msp.push.RECEIVE_MCS_MESSAGE"
+      action_start_push_service:
+        5bda171 com.sdu.didi.psnger/com.didi.sdk.push.tencent.TPushService filter 5e291ea
+          Action: "action_start_push_service"
+      com.coloros.mcs.action.RECEIVE_MCS_MESSAGE:
+        5c3677d com.sdu.didi.psnger/com.didi.sdk.push.oppo.OppoCompatibleDataMessageCallbackService filter 5ecae98 permission com.coloros.mcs.permission.SEND_MCS_MESSAGE
+          Action: "com.coloros.mcs.action.RECEIVE_MCS_MESSAGE"
+      com.huawei.push.msg.PASSBY_MSG:
+        5c366db com.sdu.didi.psnger/com.huawei.hms.support.api.push.service.HmsMsgService filter 5edbc23
+          Action: "com.huawei.push.msg.NOTIFY_MSG"
+          Action: "com.huawei.push.msg.PASSBY_MSG"
+      com.hihonor.push.action.MESSAGING_EVENT:
+        5c36759 com.sdu.didi.psnger/com.didi.sdk.push.HonorPushService filter 5ecaee6
+          Action: "com.hihonor.push.action.MESSAGING_EVENT"
+      expressionBinding:
+        5c36711 com.sdu.didi.psnger/com.alibaba.android.bindingx.plugin.weex.WXBindingXModuleService filter 5edbca5
+          Action: "bindingx"
+          Action: "binding"
+          Action: "expressionBinding"
+      com.huawei.push.action.MESSAGING_EVENT:
+        5c3678f com.sdu.didi.psnger/com.didi.sdk.push.HuaweiPushService filter 5ecae64
+          Action: "com.huawei.push.action.MESSAGING_EVENT"
+
+Permissions:
+  Permission [com.sdu.didi.psnger.permission.bh.notification] (5943dd7):
+    sourcePackage=com.sdu.didi.psnger
+    uid=10251 gids=null type=0 prot=signature|privileged
+    perm=Permission{5ee4841 com.sdu.didi.psnger.permission.bh.notification}
+    packageSetting=PackageSetting{59a0999 com.sdu.didi.psnger/10251}
+
+Permissions:
+  Permission [com.sdu.didi.psnger.permission.PUSH_WRITE_PROVIDER] (594565d):
+    sourcePackage=com.sdu.didi.psnger
+    uid=10251 gids=null type=0 prot=signature
+    perm=Permission{5ee48a3 com.sdu.didi.psnger.permission.PUSH_WRITE_PROVIDER}
+    packageSetting=PackageSetting{59a0999 com.sdu.didi.psnger/10251}
+
+Permissions:
+  Permission [com.didi.passenger.sdk.login.permission.broadcast.com.sdu.didi.psnger] (5945759):
+    sourcePackage=com.sdu.didi.psnger
+    uid=10251 gids=null type=0 prot=signature
+    perm=Permission{5ee4856 com.didi.passenger.sdk.login.permission.broadcast.com.sdu.didi.psnger}
+    packageSetting=PackageSetting{59a0999 com.sdu.didi.psnger/10251}
+
+Permissions:
+  Permission [com.sdu.didi.psnger.permission.PROCESS_PUSH_MSG] (59478c6):
+    sourcePackage=com.sdu.didi.psnger
+    uid=10251 gids=null type=0 prot=signature
+    perm=Permission{5ee4895 com.sdu.didi.psnger.permission.PROCESS_PUSH_MSG}
+    packageSetting=PackageSetting{59a0999 com.sdu.didi.psnger/10251}
+
+Permissions:
+  Permission [com.sdu.didi.psnger.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (5947a33):
+    sourcePackage=com.sdu.didi.psnger
+    uid=10251 gids=null type=0 prot=signature
+    perm=Permission{5ee488e com.sdu.didi.psnger.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    packageSetting=PackageSetting{59a0999 com.sdu.didi.psnger/10251}
+
+Permissions:
+  Permission [getui.permission.GetuiService.com.sdu.didi.psnger] (59467b4):
+    sourcePackage=com.sdu.didi.psnger
+    uid=10251 gids=null type=0 prot=normal
+    perm=Permission{5ee485d getui.permission.GetuiService.com.sdu.didi.psnger}
+    packageSetting=PackageSetting{59a0999 com.sdu.didi.psnger/10251}
+
+Permissions:
+  Permission [com.sdu.didi.psnger.permission.MIPUSH_RECEIVE] (5946af0):
+    sourcePackage=com.sdu.didi.psnger
+    uid=10251 gids=null type=0 prot=signature
+    perm=Permission{5ee4887 com.sdu.didi.psnger.permission.MIPUSH_RECEIVE}
+    packageSetting=PackageSetting{59a0999 com.sdu.didi.psnger/10251}
+
+Permissions:
+  Permission [com.sdu.didi.psnger.permission.PUSH_PROVIDER] (5946d83):
+    sourcePackage=com.sdu.didi.psnger
+    uid=10251 gids=null type=0 prot=signature
+    perm=Permission{5ee489c com.sdu.didi.psnger.permission.PUSH_PROVIDER}
+    packageSetting=PackageSetting{59a0999 com.sdu.didi.psnger/10251}
+
+Registered ContentProviders:
+  com.sdu.didi.psnger/com.didichuxing.upgrade.common.UpgradeFileProvider:
+    Provider{5edb06b com.sdu.didi.psnger/com.didichuxing.upgrade.common.UpgradeFileProvider}
+  com.sdu.didi.psnger/com.reactnativecommunity.webview.RNCWebViewFileProvider:
+    Provider{5c23bec com.sdu.didi.psnger/com.reactnativecommunity.webview.RNCWebViewFileProvider}
+  com.sdu.didi.psnger/com.didichuxing.omega.sdk.common.perforence.ConfigProvider:
+    Provider{5edb0f7 com.sdu.didi.psnger/com.didichuxing.omega.sdk.common.perforence.ConfigProvider}
+  com.sdu.didi.psnger/com.didi.bike.ammox.tech.photo.PhotoFileProvider:
+    Provider{5eba625 com.sdu.didi.psnger/com.didi.bike.ammox.tech.photo.PhotoFileProvider}
+  com.sdu.didi.psnger/com.didichuxing.tools.loader.FaceoffInitProvider:
+    Provider{5edb079 com.sdu.didi.psnger/com.didichuxing.tools.loader.FaceoffInitProvider}
+  com.sdu.didi.psnger/com.didichuxing.mas.sdk.quality.report.perforence.ConfigProvider:
+    Provider{5edb0f0 com.sdu.didi.psnger/com.didichuxing.mas.sdk.quality.report.perforence.ConfigProvider}
+  com.sdu.didi.psnger/com.didi.dimina.container.secondparty.jsmodule.jsbridge.photo.PhotoFileProvider:
+    Provider{5c23a33 com.sdu.didi.psnger/com.didi.dimina.container.secondparty.jsmodule.jsbridge.photo.PhotoFileProvider}
+  com.sdu.didi.psnger/androidx.core.content.FileProvider:
+    Provider{5eba775 com.sdu.didi.psnger/androidx.core.content.FileProvider}
+  com.sdu.didi.psnger/com.didi.beatles.im.picture.IMPictureFileProvider:
+    Provider{5edb01e com.sdu.didi.psnger/com.didi.beatles.im.picture.IMPictureFileProvider}
+  com.sdu.didi.psnger/androidx.work.impl.WorkManagerInitializer:
+    Provider{5ec2a3a com.sdu.didi.psnger/androidx.work.impl.WorkManagerInitializer}
+  com.sdu.didi.psnger/com.didichuxing.unifybridge.core.provider.UniBridgeFileProvider:
+    Provider{5edb0a3 com.sdu.didi.psnger/com.didichuxing.unifybridge.core.provider.UniBridgeFileProvider}
+  com.sdu.didi.psnger/com.huawei.hms.support.api.push.PushProvider:
+    Provider{5edc056 com.sdu.didi.psnger/com.huawei.hms.support.api.push.PushProvider}
+  com.sdu.didi.psnger/com.didi.quicksilver.QuicksilverInitProvider:
+    Provider{5eca344 com.sdu.didi.psnger/com.didi.quicksilver.QuicksilverInitProvider}
+  com.sdu.didi.psnger/com.didi.onekeyshare.callback.intercept.ShareFileProvider:
+    Provider{5eca34b com.sdu.didi.psnger/com.didi.onekeyshare.callback.intercept.ShareFileProvider}
+  com.sdu.didi.psnger/com.facebook.internal.FacebookInitProvider:
+    Provider{5ee4905 com.sdu.didi.psnger/com.facebook.internal.FacebookInitProvider}
+  com.sdu.didi.psnger/com.didi.tools.ultron.loader.InitProvider:
+    Provider{5edb17c com.sdu.didi.psnger/com.didi.tools.ultron.loader.InitProvider}
+  com.sdu.didi.psnger/com.didi.ridecommerce.lib.internal.webview.RCFileProvider:
+    Provider{5e2a056 com.sdu.didi.psnger/com.didi.ridecommerce.lib.internal.webview.RCFileProvider}
+  com.sdu.didi.psnger/androidx.startup.InitializationProvider:
+    Provider{5edb1c9 com.sdu.didi.psnger/androidx.startup.InitializationProvider}
+  com.sdu.didi.psnger/com.didi.sdk.db.DIDIContentProvider:
+    Provider{5eba77c com.sdu.didi.psnger/com.didi.sdk.db.DIDIContentProvider}
+  com.sdu.didi.psnger/com.didichuxing.omega.sdk.feedback.webview.fileprovider.AfantyFileProvider:
+    Provider{5edb0e2 com.sdu.didi.psnger/com.didichuxing.omega.sdk.feedback.webview.fileprovider.AfantyFileProvider}
+
+ContentProvider Authorities:
+  [com.sdu.didi.psnger.dimina.file.provider]:
+    Provider{5c23a33 com.sdu.didi.psnger/com.didi.dimina.container.secondparty.jsmodule.jsbridge.photo.PhotoFileProvider}
+      applicationInfo=ApplicationInfo{5e82635 com.sdu.didi.psnger}
+  [com.sdu.didi.psnger.share.provider]:
+    Provider{5eca34b com.sdu.didi.psnger/com.didi.onekeyshare.callback.intercept.ShareFileProvider}
+      applicationInfo=ApplicationInfo{5e82635 com.sdu.didi.psnger}
+  [com.sdu.didi.psnger.faceoff-init]:
+    Provider{5edb079 com.sdu.didi.psnger/com.didichuxing.tools.loader.FaceoffInitProvider}
+      applicationInfo=ApplicationInfo{5e82635 com.sdu.didi.psnger}
+  [com.sdu.didi.psnger.mas.upgrade.fileProvider]:
+    Provider{5edb06b com.sdu.didi.psnger/com.didichuxing.upgrade.common.UpgradeFileProvider}
+      applicationInfo=ApplicationInfo{5e82635 com.sdu.didi.psnger}
+  [com.sdu.didi.psnger.ultron-init]:
+    Provider{5edb17c com.sdu.didi.psnger/com.didi.tools.ultron.loader.InitProvider}
+      applicationInfo=ApplicationInfo{5e82635 com.sdu.didi.psnger}
+  [com.sdu.didi.psnger.com.didi.beatles.im.fileprovider]:
+    Provider{5edb01e com.sdu.didi.psnger/com.didi.beatles.im.picture.IMPictureFileProvider}
+      applicationInfo=ApplicationInfo{5e82635 com.sdu.didi.psnger}
+  [com.sdu.didi.psnger.ammox.file.provider]:
+    Provider{5eba625 com.sdu.didi.psnger/com.didi.bike.ammox.tech.photo.PhotoFileProvider}
+      applicationInfo=ApplicationInfo{5e82635 com.sdu.didi.psnger}
+  [com.sdu.didi.psnger.fileprovider]:
+    Provider{5c23bec com.sdu.didi.psnger/com.reactnativecommunity.webview.RNCWebViewFileProvider}
+      applicationInfo=ApplicationInfo{5e82635 com.sdu.didi.psnger}
+  [com.sdu.didi.psnger.FacebookInitProvider]:
+    Provider{5ee4905 com.sdu.didi.psnger/com.facebook.internal.FacebookInitProvider}
+      applicationInfo=ApplicationInfo{5e82635 com.sdu.didi.psnger}
+  [com.sdu.didi.psnger.com.didi.sdk.contentprovider]:
+    Provider{5eba77c com.sdu.didi.psnger/com.didi.sdk.db.DIDIContentProvider}
+      applicationInfo=ApplicationInfo{5e82635 com.sdu.didi.psnger}
+  [com.sdu.didi.psnger.omegaconfigprovider]:
+    Provider{5edb0f7 com.sdu.didi.psnger/com.didichuxing.omega.sdk.common.perforence.ConfigProvider}
+      applicationInfo=ApplicationInfo{5e82635 com.sdu.didi.psnger}
+  [com.sdu.didi.psnger.workmanager-init]:
+    Provider{5ec2a3a com.sdu.didi.psnger/androidx.work.impl.WorkManagerInitializer}
+      applicationInfo=ApplicationInfo{5e82635 com.sdu.didi.psnger}
+  [com.sdu.didi.psnger.QuicksilverInitProvider]:
+    Provider{5eca344 com.sdu.didi.psnger/com.didi.quicksilver.QuicksilverInitProvider}
+      applicationInfo=ApplicationInfo{5e82635 com.sdu.didi.psnger}
+  [com.sdu.didi.psnger.configprovider]:
+    Provider{5edb0f0 com.sdu.didi.psnger/com.didichuxing.mas.sdk.quality.report.perforence.ConfigProvider}
+      applicationInfo=ApplicationInfo{5e82635 com.sdu.didi.psnger}
+  [com.sdu.didi.psnger.mas.feedback.fileProvider]:
+    Provider{5edb0e2 com.sdu.didi.psnger/com.didichuxing.omega.sdk.feedback.webview.fileprovider.AfantyFileProvider}
+      applicationInfo=ApplicationInfo{5e82635 com.sdu.didi.psnger}
+  [com.sdu.didi.psnger.unifyjs.file.provider]:
+    Provider{5edb0a3 com.sdu.didi.psnger/com.didichuxing.unifybridge.core.provider.UniBridgeFileProvider}
+      applicationInfo=ApplicationInfo{5e82635 com.sdu.didi.psnger}
+  [com.sdu.didi.psnger.androidx-startup]:
+    Provider{5edb1c9 com.sdu.didi.psnger/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{5e82635 com.sdu.didi.psnger}
+  [com.sdu.didi.psnger.RCFileProvider]:
+    Provider{5e2a056 com.sdu.didi.psnger/com.didi.ridecommerce.lib.internal.webview.RCFileProvider}
+      applicationInfo=ApplicationInfo{5e82635 com.sdu.didi.psnger}
+  [com.sdu.didi.psnger.huawei.push.provider]:
+    Provider{5edc056 com.sdu.didi.psnger/com.huawei.hms.support.api.push.PushProvider}
+      applicationInfo=ApplicationInfo{5e82635 com.sdu.didi.psnger}
+  [com.sdu.didi.psnger.com.didi.sdk.fileprovider]:
+    Provider{5eba775 com.sdu.didi.psnger/androidx.core.content.FileProvider}
+      applicationInfo=ApplicationInfo{5e82635 com.sdu.didi.psnger}
+
+Key Set Manager:
+  [com.sdu.didi.psnger]
+      Signing KeySets: 136
+
+Packages:
+  Package [com.sdu.didi.psnger] (59a0999):
+    userId=10251
+    pkg=Package{5d374a5 com.sdu.didi.psnger}
+    codePath=/data/app/com.sdu.didi.psnger-m5sBg6a7NdDU7FMQr2_o_w==
+    resourcePath=/data/app/com.sdu.didi.psnger-m5sBg6a7NdDU7FMQr2_o_w==
+    legacyNativeLibraryDir=/data/app/com.sdu.didi.psnger-m5sBg6a7NdDU7FMQr2_o_w==/lib
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    versionCode=1207020903 minSdk=24 targetSdk=35
+    versionName=7.2.9
+    splits=[base]
+    apkSigningVersion=3
+    applicationInfo=ApplicationInfo{5e82635 com.sdu.didi.psnger}
+    applicationInfo.owns=-1
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    hwflags=[ ADD_POPBG_PERM_BY_SYSTEM ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_UNRESIZEABLE ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_REQUEST_LEGACY_EXTERNAL_STORAGE HAS_DOMAIN_URLS PARTIALLY_DIRECT_BOOT_AWARE ]
+    dataDir=/data/user/0/com.sdu.didi.psnger
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      org.apache.http.legacy
+      androidx.camera.extensions.impl
+      org.simalliance.openmobileapi
+      androidx.window.extensions
+      androidx.window.sidecar
+    usesLibraryFiles:
+      /system/framework/org.apache.http.legacy.jar
+      /system/framework/org.simalliance.openmobileapi.jar
+    timeStamp=2026-03-26 23:13:13
+    firstInstallTime=2024-01-02 07:13:27
+    lastUpdateTime=2026-03-26 23:13:18
+    installerPackageName=com.huawei.appmarket
+    signatures=PackageSignatures{59a9c7e version:3, signatures:[177dbb98], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    declared permissions:
+      com.sdu.didi.psnger.permission.bh.notification: prot=signature|privileged, INSTALLED
+      com.didi.passenger.sdk.login.permission.broadcast.com.sdu.didi.psnger: prot=signature, INSTALLED
+      getui.permission.GetuiService.com.sdu.didi.psnger: prot=normal, INSTALLED
+      com.sdu.didi.psnger.permission.MIPUSH_RECEIVE: prot=signature, INSTALLED
+      com.sdu.didi.psnger.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature, INSTALLED
+      com.sdu.didi.psnger.permission.PROCESS_PUSH_MSG: prot=signature, INSTALLED
+      com.sdu.didi.psnger.permission.PUSH_PROVIDER: prot=signature, INSTALLED
+      com.sdu.didi.psnger.permission.PUSH_WRITE_PROVIDER: prot=signature, INSTALLED
+    requested permissions:
+      android.permission.VIBRATE
+      com.android.launcher.permission.INSTALL_SHORTCUT
+      com.android.launcher.permission.UNINSTALL_SHORTCUT
+      android.permission.ACCESS_NETWORK_STATE
+      android.permission.BLUETOOTH
+      android.permission.BLUETOOTH_ADMIN
+      android.permission.ACCESS_COARSE_LOCATION
+      android.permission.ACCESS_FINE_LOCATION
+      android.permission.WAKE_LOCK
+      android.permission.ACCESS_WIFI_STATE
+      android.permission.READ_EXTERNAL_STORAGE: restricted=true
+      android.permission.READ_MEDIA_IMAGES
+      com.samsung.android.app.sreminder.permission.NOW_BAR_PROVIDER
+      android.permission.INTERNET
+      android.permission.CHANGE_NETWORK_STATE
+      android.permission.CHANGE_WIFI_STATE
+      android.permission.WRITE_EXTERNAL_STORAGE: restricted=true
+      android.permission.CAMERA
+      android.permission.BLUETOOTH_SCAN
+      android.permission.BLUETOOTH_CONNECT
+      android.permission.FLASHLIGHT
+      android.permission.QUERY_ALL_PACKAGES
+      com.android.permission.GET_INSTALLED_APPS
+      android.permission.WRITE_CALENDAR
+      android.permission.MODIFY_AUDIO_SETTINGS
+      android.permission.BLUETOOTH_ADVERTISE
+      android.permision.TURN_SCREEN_ON
+      android.permission.DETECT_SCREEN_CAPTURE
+      android.permission.FOREGROUND_SERVICE_LOCATION
+      android.permission.FOREGROUND_SERVICE_MICROPHONE
+      com.didi.passenger.sdk.login.permission.broadcast.com.sdu.didi.psnger
+      android.permission.RECORD_AUDIO
+      android.permission.FOREGROUND_SERVICE
+      android.permission.POST_NOTIFICATIONS
+      android.permission.READ_LOGS
+      android.permission.TURN_SCREEN_ON
+      android.permission.USE_FINGERPRINT
+      android.permission.READ_MEDIA_AUDIO
+      android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE
+      android.permission.ACCESS_LOCATION_EXTRA_COMMANDS
+      android.permission.ACCESS_BACKGROUND_LOCATION: restricted=true
+      android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK
+      android.permission.SYSTEM_OVERLAY_WINDOW
+      android.permission.SYSTEM_ALERT_WINDOW
+      com.sdu.didi.psnger.permission.MIPUSH_RECEIVE
+      com.hihonor.brain.permission.KIT_SERVICE_ACCESS
+      com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA
+      android.permission.READ_MEDIA_VISUAL_USER_SELECTED
+      android.permission.REQUEST_INSTALL_PACKAGES
+      android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+      com.xiaomi.security.permission.ACCESS_XSOF
+      com.google.android.gms.permission.AD_ID
+      com.sdu.didi.psnger.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+      com.vivo.aiengine.permission.BIND_INTENTION_PLUS_SERVICE
+      android.permission.NFC
+      android.hardware.nfc.hce
+      org.simalliance.openmobileapi.SMARTCARD
+      com.sdu.didi.psnger.permission.PROCESS_PUSH_MSG
+      com.sdu.didi.psnger.permission.PUSH_PROVIDER
+      com.asus.msa.SupplementaryDID.ACCESS
+      freemme.permission.msa
+      freemme.permission.msa.SECURITY_ACCESS
+      oplus.permission.settings.LAUNCH_FOR_EXPORT
+      com.vivo.identifier.permission.OAID_STATE_DIALOG
+      com.nemu.oaid.permission.read
+      com.nemu.oaid.permission.write
+      com.hihonor.push.permission.READ_PUSH_NOTIFICATION_INFO
+      com.huawei.permission.POPUP_BACKGROUND_WINDOW
+    install permissions:
+      android.permission.MODIFY_AUDIO_SETTINGS: granted=true
+      android.permission.NFC: granted=true
+      android.permission.CHANGE_NETWORK_STATE: granted=true
+      android.permission.FOREGROUND_SERVICE: granted=true
+      com.android.launcher.permission.UNINSTALL_SHORTCUT: granted=true
+      android.permission.BLUETOOTH: granted=true
+      android.permission.INTERNET: granted=true
+      com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA: granted=true
+      android.permission.BLUETOOTH_ADMIN: granted=true
+      android.permission.ACCESS_LOCATION_EXTRA_COMMANDS: granted=true
+      com.didi.passenger.sdk.login.permission.broadcast.com.sdu.didi.psnger: granted=true
+      com.huawei.permission.POPUP_BACKGROUND_WINDOW: granted=true
+      android.permission.CHANGE_WIFI_STATE: granted=true
+      android.permission.FLASHLIGHT: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.sdu.didi.psnger.permission.PROCESS_PUSH_MSG: granted=true
+      com.sdu.didi.psnger.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+      android.permission.USE_FINGERPRINT: granted=true
+      com.sdu.didi.psnger.permission.MIPUSH_RECEIVE: granted=true
+      com.sdu.didi.psnger.permission.PUSH_PROVIDER: granted=true
+      android.permission.VIBRATE: granted=true
+      android.permission.ACCESS_WIFI_STATE: granted=true
+      com.android.launcher.permission.INSTALL_SHORTCUT: granted=true
+      android.permission.WAKE_LOCK: granted=true
+    User 0: ceDataInode=430950 installed=true hidden=false suspended=false stopped=false notLaunched=false enabled=0 instant=false virtual=false
+      gids=[3002, 3003, 3001]
+      runtime permissions:
+        android.permission.ACCESS_FINE_LOCATION: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.READ_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.ACCESS_COARSE_LOCATION: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.CAMERA: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_CALENDAR: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.WRITE_EXTERNAL_STORAGE: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT]
+        android.permission.RECORD_AUDIO: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]
+        android.permission.ACCESS_BACKGROUND_LOCATION: granted=false, flags=[ USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED|RESTRICTION_INSTALLER_EXEMPT|RESTRICTION_UPGRADE_EXEMPT]
+      disabledComponents:
+        androidx.work.impl.background.systemalarm.RescheduleReceiver
+      enabledComponents:
+        androidx.work.impl.background.systemjob.SystemJobService
+
+Package Changes:
+  Sequence number=27
+  User 0:
+    seq=7, package=com.google.android.gms
+    seq=9, package=com.huawei.health
+    seq=14, package=com.lilstiffy.mockgps
+    seq=23, package=com.android.location.fused
+    seq=24, package=com.huawei.lbs
+    seq=25, package=com.huawei.nb.service
+    seq=26, package=com.huawei.hwid
+
+
+
+Compiler stats:
+  [com.sdu.didi.psnger]
+     base.apk - 26403
+
+Active APEX packages:
+
+
+Inactive APEX packages:
+
+
+Factory APEX packages:
+
+
+  APEX session state:

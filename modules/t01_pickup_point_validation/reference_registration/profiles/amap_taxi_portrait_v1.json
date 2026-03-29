@@ -1,0 +1,44 @@
+{
+  "profile_id": "amap_taxi_portrait_v1",
+  "provider": "amap",
+  "page_state": "taxi_pickup_visible",
+  "screen_size_px": [
+    1080,
+    2340
+  ],
+  "map_roi_xyxy": [
+    0,
+    0,
+    1080,
+    1240
+  ],
+  "exclude_rois_xyxy": [
+    [0, 0, 120, 150],
+    [930, 110, 1055, 520],
+    [240, 350, 770, 525],
+    [14, 870, 570, 975],
+    [0, 1065, 1080, 1240],
+    [865, 650, 1070, 930]
+  ],
+  "tip_rules": {
+    "blue_pickup_pin": {
+      "color_space": "HSV",
+      "mask_range": [
+        90,
+        90,
+        90,
+        135,
+        255,
+        255
+      ],
+      "notes": "用于固定视角 taxi 页 live pickup 蓝色 pin 取点。"
+    }
+  },
+  "reference_contract": {
+    "orientation": "portrait",
+    "north_up": true,
+    "pitch": 0,
+    "same_effective_viewport": true,
+    "same_or_equivalent_basemap_semantics": true
+  }
+}

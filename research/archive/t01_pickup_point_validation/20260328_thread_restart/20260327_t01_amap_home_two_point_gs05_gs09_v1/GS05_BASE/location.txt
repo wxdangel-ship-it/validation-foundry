@@ -1,0 +1,141 @@
+Current Location Manager state:
+  Current System Time: 03-27 15:16:51.955, Current Elapsed Time: +15h28m24s496ms
+  Current user: 0 [0]
+  Location mode: true
+  Battery Saver Location Mode: NO_CHANGE
+  Location Listeners:
+    Reciever[5cfa2b1 listener UpdateRecord[passive com.google.android.gms(10197 foreground) Request[POWER_NONE passive fastest=0] null] monitoring location: false]
+    Reciever[62b7351 listener UpdateRecord[passive com.huawei.nb.service(1000 foreground) Request[POWER_NONE passive fastest=+500ms] null] monitoring location: true]
+    Reciever[61405d9 listener UpdateRecord[passive com.huawei.systemserver(1000 foreground) Request[POWER_NONE passive fastest=+1s0ms] null] monitoring location: true]
+    Reciever[5d44db1 listener UpdateRecord[passive com.autonavi.minimap(10228 foreground) Request[POWER_NONE passive fastest=0] null] monitoring location: true]
+    Reciever[629d8c1 listener UpdateRecord[gps com.autonavi.minimap(10228 foreground) Request[ACCURACY_FINE gps requested=+1s0ms fastest=+1s0ms] null] monitoring location: true]
+    Reciever[634bed9 listener UpdateRecord[passive com.autonavi.minimap(10228 foreground) Request[POWER_NONE passive fastest=0] null] monitoring location: true]
+    Reciever[5d74aa1 listener UpdateRecord[passive com.android.nfc(1027 foreground) Request[POWER_NONE passive fastest=0] null] monitoring location: true]
+    Reciever[61075b1 listener UpdateRecord[passive com.google.android.gms(10197 foreground) Request[POWER_NONE passive fastest=0] null] monitoring location: false]
+    Reciever[61d6ad9 listener UpdateRecord[passive android(1000 foreground) Request[POWER_NONE passive fastest=+30m0s0ms] null] monitoring location: true]
+    Reciever[615e6f1 listener UpdateRecord[passive android(1000 foreground) Request[POWER_NONE passive fastest=0] null] monitoring location: false]
+    Reciever[6106aa9 listener UpdateRecord[passive com.huawei.hiai(5514 foreground) Request[POWER_NONE passive fastest=+5s0ms] null] monitoring location: true]
+    Reciever[6300a21 listener UpdateRecord[passive com.android.phone(1001 foreground) Request[POWER_NONE passive fastest=0] null] monitoring location: true]
+  Active Records by Provider:
+    gps:
+      UpdateRecord[gps com.autonavi.minimap(10228 foreground) Request[ACCURACY_FINE gps requested=+1s0ms fastest=+1s0ms] null]
+    passive:
+      UpdateRecord[passive android(1000 foreground) Request[POWER_NONE passive fastest=0] null]
+      UpdateRecord[passive android(1000 foreground) Request[POWER_NONE passive fastest=+30m0s0ms] null]
+      UpdateRecord[passive com.huawei.systemserver(1000 foreground) Request[POWER_NONE passive fastest=+1s0ms] null]
+      UpdateRecord[passive com.android.nfc(1027 foreground) Request[POWER_NONE passive fastest=0] null]
+      UpdateRecord[passive com.huawei.hiai(5514 foreground) Request[POWER_NONE passive fastest=+5s0ms] null]
+      UpdateRecord[passive com.google.android.gms(10197 foreground) Request[POWER_NONE passive fastest=0] null]
+      UpdateRecord[passive com.google.android.gms(10197 foreground) Request[POWER_NONE passive fastest=0] null]
+      UpdateRecord[passive com.huawei.nb.service(1000 foreground) Request[POWER_NONE passive fastest=+500ms] null]
+      UpdateRecord[passive com.android.phone(1001 foreground) Request[POWER_NONE passive fastest=0] null]
+      UpdateRecord[passive com.autonavi.minimap(10228 foreground) Request[POWER_NONE passive fastest=0] null]
+      UpdateRecord[passive com.autonavi.minimap(10228 foreground) Request[POWER_NONE passive fastest=0] null]
+    network:
+  Active GnssMeasurement Listeners:
+    19625 10228 com.autonavi.minimap: false
+  Active GnssNavigationMessage Listeners:
+  Active GnssStatus Listeners:
+    2655 10197 com.google.android.gms: true
+    2655 10197 com.google.android.gms: true
+    19625 10228 com.autonavi.minimap: false
+    1684 1000 android: true
+    19449 10228 com.autonavi.minimap: false
+  Historical Records by Provider:
+    com.huawei.hiai: gps: Interval 0 seconds: Duration requested 0 total, 0 foreground, out of the last 913 minutes: Last active 352 minutes ago
+    com.sdu.didi.psnger: network: Interval 1 seconds: Duration requested 52 total, 52 foreground, out of the last 921 minutes: Last active 241 minutes ago
+    android: passive: Min interval 0 seconds: Max interval 1800 seconds: Duration requested 927 total, 927 foreground, out of the last 927 minutes: Currently active
+    com.huawei.lbs: passive: Min interval 0 seconds: Max interval 1 seconds: Duration requested 575 total, 147 foreground, out of the last 923 minutes: Last active 316 minutes ago
+    com.huawei.hiai: network: Interval 0 seconds: Duration requested 3 total, 0 foreground, out of the last 923 minutes: Last active 352 minutes ago
+    com.sdu.didi.psnger: passive: Interval 1 seconds: Duration requested 52 total, 52 foreground, out of the last 921 minutes: Last active 241 minutes ago
+    com.huawei.ohos.suggestion: network: Interval 0 seconds: Duration requested 2 total, 0 foreground, out of the last 923 minutes: Last active 355 minutes ago
+    com.huawei.nb.service: passive: Interval 0 seconds: Duration requested 506 total, 506 foreground, out of the last 923 minutes: Currently active
+    com.huawei.systemserver: passive: Interval 1 seconds: Duration requested 927 total, 927 foreground, out of the last 927 minutes: Currently active
+    com.google.android.gms: passive: Interval 0 seconds: Duration requested 923 total, 923 foreground, out of the last 923 minutes: Currently active
+    com.huawei.hiai: passive: Interval 5 seconds: Duration requested 923 total, 923 foreground, out of the last 923 minutes: Currently active
+    com.huawei.hwid: passive: Min interval 0 seconds: Max interval 60 seconds: Duration requested 626 total, 147 foreground, out of the last 927 minutes: Last active 300 minutes ago
+    com.android.phone: passive: Interval 0 seconds: Duration requested 925 total, 925 foreground, out of the last 927 minutes: Currently active
+    com.android.nfc: passive: Interval 0 seconds: Duration requested 923 total, 923 foreground, out of the last 923 minutes: Currently active
+    com.autonavi.minimap: passive: Min interval 0 seconds: Max interval 1 seconds: Duration requested 332 total, 309 foreground, out of the last 920 minutes: Currently active
+    com.autonavi.minimap: gps: Min interval 0 seconds: Max interval 1 seconds: Duration requested 305 total, 305 foreground, out of the last 920 minutes: Currently active
+    com.sdu.didi.psnger: gps: Min interval 1 seconds: Max interval 9 seconds: Duration requested 51 total, 51 foreground, out of the last 921 minutes: Last active 241 minutes ago
+  Last Known Locations:
+    gps: Location[gps 31******,122****** hAcc=2 et=+15h28m24s316ms alt=12.5 vAcc=??? sAcc=??? bAcc=??? mock]
+    passive: Location[gps 31******,122****** hAcc=2 et=+15h28m24s316ms alt=12.5 vAcc=??? sAcc=??? bAcc=??? mock]
+  Last Known Locations Coarse Intervals:
+    gps: Location[gps 31******,122****** hAcc=2 et=+15h21m46s835ms alt=12.5 vAcc=??? sAcc=??? bAcc=??? mock]
+    passive: Location[gps 31******,122****** hAcc=2 et=+15h21m46s835ms alt=12.5 vAcc=??? sAcc=??? bAcc=??? mock]
+  Geofences:
+  mWhitelist=[] mBlacklist=[]
+  Throttling Whitelisted Packages:
+    com.huawei.health
+    com.huawei.hidisk
+    com.huawei.intelligent
+    com.huawei.hwid
+    com.google.android.gms
+    com.huawei.aml
+    com.huawei.hms
+  Bypass Whitelisted Packages:
+    com.google.android.dialer
+    com.google.android.gms
+  fudger: offset: 111, -83 (meters)
+  passive provider:
+    useable=true
+    properties=com.android.internal.location.ProviderProperties@60e9b31
+ report location=true
+  local_database provider:
+    useable=false
+    attached=false
+    enabled=false
+    properties=com.android.internal.location.ProviderProperties@5e2c9f5
+  network provider:
+    useable=true
+    properties=null
+REMOTE SERVICE pkg=null
+  fused provider:
+    useable=true
+    properties=com.android.internal.location.ProviderProperties@61ca121
+    service=null
+  gps provider [mock]:
+    useable=true
+    properties=com.android.internal.location.ProviderProperties@629179d
+ last location=Location[gps 31******,122****** hAcc=2 et=+15h28m24s316ms alt=12.5 vAcc=??? sAcc=??? bAcc=??? mock]
+  LocationPowerTracker:
+    Gps history of com.huawei.hiai
+      Record [Start=1774541017097]
+      Record [Start=1774541047222]
+      Record [Start=1774541077223]
+      Record [Start=1774541107252]
+      Record [Start=1774541137252]
+      Record [Start=1774541167266]
+      Record [Start=1774541197287]
+      Record [Start=1774541227296]
+      Record [Start=1774541257305]
+      Record [Start=1774541287324]
+      Record [Start=1774565409448]
+      Record [Start=1774574420388]
+      Record [Start=1774574450466]
+      Record [Start=1774574480484]
+      Record [Start=1774574510503]
+      Record [Start=1774574540522]
+      Record [Start=1774574570550]
+      Record [Start=1774574600563]
+      Record [Start=1774574630569]
+      Record [Start=1774574660584]
+      Record [Start=1774574690603]
+
+
+Exception occurred while dumping:
+java.util.NoSuchElementException
+	at java.util.HashMap$HashIterator.nextNode(libmaplecore-all.so:4689256)
+	at java.util.HashMap$EntryIterator.next(libmaplecore-all.so:4686264)
+	at com.android.server.location.HwGpsPowerTracker.dump(libmaplehwServices.so:8130272)
+	at com.android.server.HwLocationManagerService.hwLocationPowerTrackerDump(libmaplehwServices.so:10945384)
+	at com.android.server.LocationManagerService.dump(libmapleservices.so:18541956)
+	at android.os.Binder.doDump(libmapleframework.so:6050752)
+	at android.os.Binder.dump(libmapleframework.so:6051236)
+	at android.os.Binder.onTransact(libmapleframework.so:3618564)
+	at android.location.ILocationManager$Stub.onTransact(libmapleframework.so:5180140)
+	at com.android.server.HwLocationManagerService.onTransact(libmaplehwServices.so:2334628)
+	at android.os.Binder.execTransactInternal(libmapleframework.so:6281140)
+	at android.os.Binder.execTransact(libmapleframework.so:6282936)
