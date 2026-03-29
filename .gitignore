@@ -13,3 +13,5 @@ outputs/_freeze/*
 !outputs/_freeze/README.md
 outputs/_tmp/*
 !outputs/_tmp/README.md
+
+research/archive/t01_pickup_point_validation/20260328_thread_restart/apk_probe/*.apk
